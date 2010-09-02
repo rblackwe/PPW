@@ -1,0 +1,16 @@
+[% WRAPPER ui title = "Survey Accepted" %]
+[% PROCESS _conf/main %]
+<h1>Thanks!</h1>
+<p>Thank you for taking the time to complete our survey!   Your opinions are
+useful to us in planning next year's conference.</p>
+
+<p>Here are some Perl resources that you might find useful:</p>
+
+<ul>
+    <li><a href="http://pgh.pm.org">The Pittsburgh Perl Mongers</a></li>
+    <li><a href="http://pm.org">The Perl Monger organization home page</a></li>
+    <li><a href="http://perlfoundation.org">The Perl Foundation</a></li>
+    <li><a href="http://perlmonks.org">Perlmonks</a> - a useful resource for beginners</a></li>
+    <li><a href="http://use.perl.org">use.perl</a> - A Perl news site</a></li>
+</ul>
+[% END %]

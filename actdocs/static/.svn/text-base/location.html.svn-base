@@ -1,0 +1,136 @@
+[% WRAPPER ui title = "Location" %]
+[% PROCESS _conf/main %]
+<h1>Workshop Location</h1>
+
+<div class="naked-content">
+<p>
+  The [% site.event_name %] will be held in Wean Hall at
+  <a href="http://cmu.edu">Carnegie Mellon University</a> in Pittsburgh, PA.
+</p>
+<p>
+  The CMU campus is located in Oakland, a community within Pittsburgh's
+  wonderful East End. There is no shortage of things to do, see, and eat
+  in Oakland, and on the East End.
+</p>
+</div>
+<!----
+<h1>Finding Wean Hall</h1>
+<div class="naked-content">
+    <p>
+    A full campus map may be found <a href="http://www.cmu.edu/about/visit/campus-map.shtml">here</a>.
+    </p>
+    <img src="[% make_uri('images/CampusMap.gif') %]" alt="Campus Map" height="346px" width="447px" />
+    <p>
+    There is free parking within walking distance of the university.  The
+    closest parking lot to Wean Hall is the Morewood parking lot on Forbes
+    Avenue (labeled P12 / "PPW Parking" on the map above).  Nearby hotels also
+    operate shuttles to and from the university.
+    </p>
+    <p>
+    From the Morewood parking lot, cross over Forbes Avenue.  Take the sidewalk
+    down to the driveway right next to the short bridge overlooking Junction
+    Hollow.  There is a bus stop at this driveway.
+    </p>
+    <p>
+    Turn left into the driveway.  The CIC (Collaborative Innovation Center) will be
+    on your right.
+    </p>
+    <p>
+    Follow the driveway all the way....and turn left.  You will be standing in
+    front on Newell-Simon Hall (can't miss it, the Gates/Hillman Complex is next
+    door).
+    </p>
+    <p>
+    Enter Newell-Simon Hall.  You will be on the 3rd floor.
+    </p>
+    <p>
+    Go up the grand staircase to the 4th floor and head toward the glass bridge
+    connecting Newell-Simon and Wean Halls.  The 4th floor of Newell-Simon
+    connects to the 4th floor of Wean.
+    <p>
+    Go toward the library...and at the Library Decorative Light, turn right and
+    you'll see the elevators.
+    <p>
+    Take the elevators up to the 7th floor.  The registration area is directly in
+    front of the elevator.
+    <p>
+</div>
+-->
+<h1>Where to Stay</h1>
+
+<div class="location">
+  <span class="location-name">Quality Inn University Center</span>
+  <div class="location-text">
+      <p><a href="http://www.choicehotels.com/ires/en-us/html/HotelInfo?hotel=PA369&amp;promo=gglocal">choicehotels.com</a></p>
+      <p>
+    The [% site.event_name %] organizers recommend the Quality Inn for
+    attendees.  They offer free parking and provide free shuttle runs to CMU
+    during the day.
+      </p>
+<p>We are still working on getting a special conference rate for PPW 2010, please check back on this page for more information soon.</p>
+  </div>
+
+  <div class="location-detail">
+  <span class="location-cat">Phone</span>
+  <span class="location-item">
+      412-683-6100
+  </span>
+  </div>
+  <div class="location-detail">
+
+<!----
+  <span class="location-cat">Rooms</span>
+  <span class="location-item">
+      <p>Unfortunately, we've been informed that rooms are very limited due to
+      other events going on in the city the same weekend.   Therefore, we
+      advise everybody to reserve their rooms early.  We will also be working
+      to reserve blocks of rooms at other hotels.</p>
+
+      <p>We have been able to reserve the following limited supplies at the
+      Quality Inn:<p>
+
+      <ul>
+          <li>5 Rooms, Non-Smoking with two double beds.</li>
+          <li>5 Rooms, Smoking with two double beds.</li>
+          <li>15 - 20 Rooms, Non-Smoking with one queen Bed.</li>
+      </ul>
+  </span>
+  </div>
+  <div class="location-detail">
+  <span class="location-cat">Rate</span>
+  <span class="location-item">
+    $109.99 plus tax per night. Please mention that this is for the "Pittsburgh
+    Perl Workshop" event when reserving your room.   Discount cut off date is
+    Tuesday, September 9, 2010.
+  </span>
+--->
+  </div>
+</div>
+
+
+<h2>Other hotel resources</h2>
+<ul>
+    <li><a href="http://www.pitt.edu/~property/hotels.html">Univeristy of Pittsburgh Housing Resources</a></li>
+    <li><a href="http://www.metrotravelguide.com/hotels_nearby/Pittsburgh/PA/USA/0/Carnegie_Mellon_University/">Metrotravelguide.com</a></li>
+    <li><a href="http://www.hotels-rates.com/hotels/locations/Pittsburgh/PA/usa/1458/">Hotel-rates.com</a></li>
+</ul>
+
+<h1>Where to Park</h1>
+<p>
+  On the day of the event, free parking will be available in the 
+  <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=Pittsburgh+PA&amp;ie=UTF8&amp;om=1&amp;z=17&amp;ll=40.443489,-79.940332&amp;spn=0.005373,0.013561&amp;t=h">East Campus Garage</a>.
+  The garage is located directly north of the
+  football field and the University Center is located directly west of the
+  football field.
+</p>
+
+<h1>Where to Eat</h1>
+<div class="important-note">
+  Breakfast, lunch, and beverages will be provided on the day of the
+  workshop. Isn't that sweet?
+</div>
+[% PROCESS comp/location/restaurants %]
+
+<h1>What to Do</h1>
+[% PROCESS comp/location/attractions %]
+[% END %]

@@ -1,0 +1,37 @@
+[% WRAPPER ui title = "Sponsors" %]
+[% PROCESS _conf/main %]
+<h1>Our sponsors</h1>
+
+<p>For sponsorship information, please contact <a href="mailto:sponsors@pghpw.org">sponsors@pghpw.org</a>.</p>
+
+
+<h1>Our partners</h1>
+
+<h3>Carnegie Mellon University, School of Computer Science</h3>
+<p><a href="http://www.cs.cmu.edu/">http://www.cs.cmu.edu/</a></p>
+
+<p>Since its inception as a department in 1965, and its evolution into a School
+in 1988, Computer Science at Carnegie Mellon has followed a path devoted to
+excellence in both research and education. At the heart of our efforts is a
+dedication to producing highly-qualified research scientists. Our great
+strength has been our ability to push experimental computer science ideas from
+theory to practical demonstration. We have enjoyed productive working
+relationships with industry, enriching our environment with practical
+applications and technology transfer.</p>
+
+<p>In the past 15 years, SCS researchers have pioneered developments in the
+areas of distributed systems, networking, software technology, robotics, and
+parallel processing. We are at the forefront of the computer science field,
+furthering the accomplishments of our founders. </p>
+
+<img src="[% make_uri('images/sponsors/tpf.png') %]" class="sponsor-logo" />
+<h3>The Perl Foundation</h3>
+
+<p><a href="http://www.perlfoundation.org">http://www.perlfoundation.org</a></p>
+
+<p>Perl is a stable, cross-platform, open source programming language used 
+for mission critical projects in the public and private sectors. The 
+Perl Foundation is a non-profit corporation established to advance the 
+use and development of the Perl programming language.</p>
+
+[% END %]

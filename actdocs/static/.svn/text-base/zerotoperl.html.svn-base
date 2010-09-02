@@ -1,0 +1,62 @@
+[% WRAPPER ui title = "From Zero To Perl" %]
+[% PROCESS _conf/main %]
+
+<h1>[% page.title %]</h1>
+
+<h2>A one-day introductory Perl course</h2>
+
+<p>The Pittsburgh Perl Workshop is happy to announce "[% site.ztp_name %]," a
+special course for programmers new to the Perl programming language, to be
+taught by returning PPW speaker, Daniel Klein.</p>
+
+<p>There is an additional registration fee to take this course. Please be sure
+to select the "[% site.ztp_name %]" option when registering. Seating in this
+course is limited.</p>
+
+<h2>About the course.</h2>
+
+<p>Find out why Perl has become the language of choice for Web development,
+text processing, database access, Internet services, mail filtering, systems
+administration, and other tasks requiring portable and easily-developed
+solutions.</p>
+
+<p>This comprehensive course will enable you to unleash Perl's text processing
+and file manipulation powers using its rich collection of built-in functions
+and its unsurpassed pattern matching capabilities.</p>
+
+<p>In addition to providing a thorough introduction to essential Perl syntax
+such as variables, flow control, subroutines, file I/O, string and array
+manipulation, this course also presents more advanced techniques such as
+parsing text with regular expressions and building data structures
+dynamically.</p>
+
+<p>This fast-paced course covers the following Perl topics:</p>
+
+<ul>
+    <li>Basic I/O and Flow Control</li>
+    <li>Operators</li>
+    <li>Manipulating Strings</li>
+    <li>Arrays and Lists</li>
+    <li>Hashes</li>
+    <li>Additional I/O Techniques</li>
+    <li>Data Structures and References</li>
+    <li>Regular Expressions</li>
+    <li>Subroutines</li>
+</ul>
+
+
+<h2>About the instructor.</h2> 
+
+<p>Daniel Klein has been instructing Perl for over a decade as a member of the
+Tom Christiansen Perl Consultancy. He has been teaching subjects relating to
+Unix since 1984, and has been involved in Unix since 1976. His experience
+includes the internals of almost every Unix kernel released in the past 30
+years, real-time process control, compilers and interpreters, medical
+diagnostic systems, system security and administration, web-related systems and
+servers, graphical user interface management systems, and a racetrack betting
+system. He contributes regularly to the proceedings of the USENIX Association,
+and is also their education director. He holds a Masters of Applied Mathematics
+from Carnegie-Mellon University in Pittsburgh, and in his free time is a member
+of an a capella choir and an improvisational comedy troupe.</p>
+
+[% END %]

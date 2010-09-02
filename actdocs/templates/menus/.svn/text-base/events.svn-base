@@ -1,0 +1,15 @@
+[% IF global.request.user.is_orga %]
+[% WRAPPER menus/section %]
+  {{Events}}
+[% END %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('events') %]">
+    Show events
+   </a>
+   [% END %]
+   [% WRAPPER menus/item %]
+   <a href="[% make_uri('newevent') %]">
+    {{Submit a new event}}
+   </a>
+   [% END %]
+[% END %]

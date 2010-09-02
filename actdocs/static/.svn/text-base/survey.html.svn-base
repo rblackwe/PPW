@@ -1,0 +1,248 @@
+[% WRAPPER ui title = "Survey" %]
+[% PROCESS _conf/main %]
+<style type="text/css">
+    .survey-question {
+        font-weight: bolder;
+        margin-top: 25px;
+    }
+    .survey-answer {
+        margin-left: 10px;
+    }
+    .survey-answer label {
+        margin-top: 4px;
+    }
+    .survey-answer input {
+        margin-right: 8px;
+    }
+    .survey-answer th {
+        padding-right: 9px;
+        width: 6em;
+    }
+
+    table.survey-answer {
+        border-collapse: collapse;
+    }
+
+    td.survey-choice {
+        text-align: center;
+    }
+
+    tr.greyrow {
+        background-color: #eee;
+    }
+
+</style>
+<p><b>Privacy note:</b> Feel free to let us know how we did anonymously.   Just
+log out prior to taking the survey and your user information will not be
+recorded.</p>
+<form method="post" action="http://survey.pghpw.org/cgi-sys/cgiemail/Survey_Submission.txt">
+<input type="hidden" name="success" value="[% make_uri('survey_submit.html') %%]">
+<input type="hidden" name="user_id" value="[% global.request.user.user_id %]">
+    <div class="survey-question">Have you attended any previous Pittsburgh Perl Workshops?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_11" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_11" value="no">No</label>
+</div>
+    <div class="survey-question">Based on your experiences, would you like to attend future Pittsburgh Perl Workshops?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_1" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_1" value="no">No</label>
+</div>
+<div class="survey-question">Is this your first Perl Conference?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_3" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_3" value="no">No</label>
+</div>
+<div class="survey-question">How do you rate your Perl experience?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_4" value="none">I am new to Perl.</label><br>
+    <label ><input type="radio" name="question_4" value="little">I have used Perl a little.</label><br>
+    <label ><input type="radio" name="question_4" value="lot">I have used Perl a lot.</label><br>
+    <label ><input type="radio" name="question_4" value="expert">I am a Perl expert.</label>
+</div>
+
+<div class="survey-question">Having attended this conference, do you feel more
+    likely to use Perl in your future projects?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_5" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_5" value="no">No</label><br>
+    <label ><input type="radio" name="question_5" value="na">I already use Perl a lot.</label>
+</div>
+<!--
+<div class="survey-question">Which track did you attend more?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_9" value="basic">Basic (pair Networks Room)</label><br>
+    <label ><input type="radio" name="question_9" value="advanced">Advanced (Google Room)</label><br>
+    <label ><input type="radio" name="question_9" value="both">I attended both tracks nearly evenly</label>
+</div>
+-->
+<div class="survey-question">Please rate your satisfaction with the following aspsects of this workshop:</div>
+<table class="survey-answer">
+    <tr ><td></td>
+        <th>Very<br /> Satisfied</th>
+        <th>Somewhat<br /> satisfied</th>
+        <th>Somewhat<br /> un-satisfied</th>
+        <th>Very<br /> un-satisfied</th>
+        <th>N/A</th>
+    </tr>
+    <tr ><td>Content of the talks</td>
+        <td class="survey-choice"><input type="radio" name="question_6_1" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_1" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_1" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_1" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_1" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Efficiency of the schedule</td>
+        <td class="survey-choice"><input type="radio" name="question_6_2" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_2" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_2" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_2" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_2" value="na"></td>
+    </tr>
+    <!--
+    <tr ><td>BOFs</td>
+        <td class="survey-choice"><input type="radio" name="question_6_14" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_14" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_14" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_14" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_14" value="na"></td>
+    </tr>
+    -->
+    <tr><td>Wireless internet access</td>
+        <td class="survey-choice"><input type="radio" name="question_6_15" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_15" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_15" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_15" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_15" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Hackathon</td>
+        <td class="survey-choice"><input type="radio" name="question_6_12" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_12" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_12" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_12" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_12" value="na"></td>
+    </tr>
+    <tr ><td>Social events</td>
+        <td class="survey-choice"><input type="radio" name="question_6_13" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_13" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_13" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_13" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_13" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Parking</td>
+        <td class="survey-choice"><input type="radio" name="question_6_3" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_3" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_3" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_3" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_3" value="na"></td>
+    </tr>
+    <tr><td>Facilities</td>
+        <td class="survey-choice"><input type="radio" name="question_6_4" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_4" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_4" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_4" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_4" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Food service</td>
+        <td class="survey-choice"><input type="radio" name="question_6_5" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_5" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_5" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_5" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_5" value="na"></td>
+    </tr>
+    <tr><td>Web site</td>
+        <td class="survey-choice"><input type="radio" name="question_6_6" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_6" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_6" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_6" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_6" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Registration process</td>
+        <td class="survey-choice"><input type="radio" name="question_6_7" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_7" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_7" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_7" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_7" value="na"></td>
+    </tr>
+    <tr><td>Hotel options</td>
+        <td class="survey-choice"><input type="radio" name="question_6_8" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_8" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_8" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_8" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_8" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Staff</td>
+        <td class="survey-choice"><input type="radio" name="question_6_9" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_9" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_9" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_9" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_9" value="na"></td>
+    </tr>
+    <tr><td>Overall event experience</td>
+        <td class="survey-choice"><input type="radio" name="question_6_10" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_10" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_10" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_10" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_10" value="na"></td>
+    </tr>
+    <tr class="greyrow"><td>Value for price</td>
+        <td class="survey-choice"><input type="radio" name="question_6_11" value="v-sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_11" value="sat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_11" value="unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_11" value="v-unsat"></td>
+        <td class="survey-choice"><input type="radio" name="question_6_11" value="na"></td>
+    </tr>
+</table>
+<div class="survey-question">Did you use the conference-provided wireless network access?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_13" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_13" value="no">No</label>
+</div>
+<div class="survey-question">How would you feel if wireless network access was not provided?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_14" value="nonet">I would prefer no network access.</label><br>
+    <label ><input type="radio" name="question_14" value="dontcare">I do not care if network access is available.</label><br>
+    <label ><input type="radio" name="question_14" value="wantnet">Having network access is important to me.</label><br>
+    <label ><input type="radio" name="question_14" value="mandatorynet">I would not attend PPW without network access.</label>
+</div>
+<div class="survey-question">Were you able to find the event easily?</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_10" value="yes">Yes</label><br>
+    <label ><input type="radio" name="question_10" value="no">No</label>
+</div>
+<div class="survey-question">How many miles did you travel to get to The Pittsburgh Perl Workshop?</div>
+<div class="survey-answer">
+    <input type="text" name="question_12" size="4">
+</div>
+<div class="survey-question">If you were organizing this workshop, what things would you have done differently?</div>
+<div class="survey-answer">
+    <textarea name="question_8" rows="5" cols="40"></textarea>
+</div>
+
+<p>We'd also like to take a minute to survey about your involvement with the
+Perl Mongers in your area.   Many people do not know that there are many Perl
+Monger groups located all over the world.   Membership in the Perl Mongers is
+free.</p>
+
+<div class="survey-question">Are you already involved with a Perl Monger group? (If not, why?)</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_7a" value="na">There are no Perl Monger groups in my area.</label><br>
+    <label ><input type="radio" name="question_7a" value="dontknow">I don't know of a Perl Monger group in my area.</label><br>
+    <label ><input type="radio" name="question_7a" value="member">I attend Perl Monger meetings in my area.</label><br>
+    <label ><input type="radio" name="question_7a" value="nonmember">I do not attend Perl Monger meetings in my area.</label>  Why?
+    <input type="text" name="question_7a_reason" size="40">
+</div>
+<div class="survey-question">Are you interested in joining the Perl Mongers? (If not, why?)</div>
+<div class="survey-answer">
+    <label ><input type="radio" name="question_7b" value="member">I am alread a member.</label><br>
+    <label ><input type="radio" name="question_7b" value="interested">I am
+        interested in joining.  (You can find a list of local groups at <a
+            href="http://pm.org">pm.org</a>)</label><br>
+    <label ><input type="radio" name="question_7b" value="notinterested">I am not interested in joining.</label> Why?
+    <input type="text" name="question_7b_reason" size="40">
+</div>
+<div class="survey-question">Thank you for taking the time to complete this survey.  Once you are satisfied with your answers, please click submit.</div>
+<div class="survey-answer"><input type="submit" name="submit" value="Submit"></div>
+
+</form>
+[% END %]

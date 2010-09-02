@@ -1,0 +1,7 @@
+[% WRAPPER ui title = "The Pittsburgh Perl Workshop" %]
+[% PROCESS _conf/main %]
+[% PROCESS common %]
+
+The content goes here.
+
+[% END %]

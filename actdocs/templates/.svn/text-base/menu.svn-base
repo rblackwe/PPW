@@ -1,0 +1,10 @@
+<dl>
+[% PROCESS menus/ppw %]
+[% PROCESS menus/user %]
+[% PROCESS menus/users %]
+[% PROCESS menus/talks %]
+[% PROCESS menus/events %]
+[% PROCESS menus/treasurer %]
+[% PROCESS menus/admin %]
+[% PROCESS menus/act_confs %]
+</dl>

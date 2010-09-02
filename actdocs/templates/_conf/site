@@ -1,0 +1,32 @@
+[%
+  site = {
+      event_name = '<span class="event-name"><span class="city">Pittsburgh</span>
+                      <span class="language">Perl</span>
+                      <span class="event">Workshop</span></span>',
+      event_short_name = '<span class="event-name">PPW 2010</span></span>',
+      event_date = '<span class="event-date"><span class="month">October</span>
+                      <span class="day">9&#8211;10</span>
+                      <span class="year">2010</span></span>',
+      event_year = '2010'
+      event_theme = '<span class="event-theme">UNDEF</span>',
+      
+      list_general  = 'pittsburgh-perl-workshop@googlegroups.com',
+      list_proposal = 'ppw-proposals@googlegroups.com',
+      list_announce = 'ppw-announce@googlegroups.com',
+
+      list_general_url  = 'http://groups.google.com/group/pittsburgh-perl-workshop',
+      list_proposal_url = 'http://groups.google.com/group/ppw-proposals',
+      list_announce_url = 'http://groups.google.com/group/ppw-announce',
+      
+      pgh_pm = '<a href="http://pgh.pm.org">Pittsburgh Perl Mongers</a>',
+
+      track_easy = 'introductory',
+      track_hard = 'advanced',
+
+      ztp_name = 'From Zero to Perl',
+      peter_scott_name = 'Maintaining Code While Staying Sane',
+  };
+  
+  site.event_name = site.event_name.replace('>\s+<', '> <');
+  site.event_date = site.event_date.replace('>\s+<', '> <');
+%]

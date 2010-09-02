@@ -1,0 +1,63 @@
+[% PROCESS _conf/main %]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% global.request.language %]" xml:lang="[% global.request.language %]">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="[% global.request.language %]" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
+      href="[% global.request.base_url %][% make_uri_info( 'atom', global.request.language ) %].xml" />
+<link rel="stylesheet" type="text/css" href="[% make_uri( 'css/grids.css' ) %]" />
+<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
+<link rel="stylesheet" type="text/css" href="[% make_uri( 'css/ppw2010.css' ) %]" />
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/act.js"></script>
+</script>
+<!-- compliance patch for microsoft browsers -->
+<!--[if lt IE 7]>
+<style type="text/css">
+  #hd {
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="[% make_uri('images/css/ppw/large-header-bg.png') %]", sizingMethod='scale');
+  }
+</style>
+<![endif]-->
+[%- IF title -%]<title>[% title  %]</title>[%- END -%]
+</head>
+<body>
+    <div id="doc" class="yui-t2">
+	<div id="hd">
+      <img src="[% make_uri('images/css/ppw/mast.jpg') %]" alt="" />
+      <h1 id="page-title">[% title %]</h1>
+	</div>
+	<div id="bd">
+		<div id="yui-main">
+			<div id="content" class="yui-b">
+				<!-- PUT MAIN COLUMN CODE HERE -->
+                <div id="content-text">[% content %]
+                    <div>[% TRY; IF template.name == 'talk/add'; %]
+                        <div> <em>Note: All invitations to speak at [% site.event_short_name %] are conditional
+                            upon your consenting to being recorded.  If you do not consent to
+                            being recorded, we cannot offer your a speaking slot.  Please note,
+                            however, that even through your talk will be recorded, you can elect
+                            not to have the recording shared.  In order words, if you don't
+                            want to be a part of the [% site.event_short_name %] podcasts, you don't have to be.
+                            Please see the FAQ if you have any questions.</em> </div>
+                        [% END; CATCH; END %]</div>
+                                  </div>
+			</div>
+		</div>
+		<div id="nav" class="yui-b">
+			<!-- PUT SECONDATY COLUMN CODE HERE -->
+			[% PROCESS menu %]
+		</div>
+	</div>
+	<div id="ft">
+        <p>Copyright &copy; 2006-[% site.event_year %] Pittsburgh Perl Mongers. Mast photo by <a href="http://flickr.com/people/whobee/">whobee@flickr</a>.</p>
+	</div>
+</div>
+</body>
+</html>

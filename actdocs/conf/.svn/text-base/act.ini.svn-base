@@ -1,0 +1,77 @@
+[general]
+full_uri  = http://pghpw.org/ppw2010/
+languages = en
+default_language = en
+default_country  = us
+name_en   = Pittsburgh Perl Workshop 2010
+timezone  = America/New_York
+
+[registration]
+open = 1
+
+[survey]
+open = 0
+
+[talks]
+submissions_open = 1
+submissions_notify_address = ppw-proposals@googlegroups.com
+submissions_notify_language = en
+edition_open = 1
+show_schedule = 1
+durations = 20 50
+start_date = 2010-10-08 18:00:00
+end_date   = 2010-10-11 18:00:00
+levels  = 4
+
+[levels]
+# level names in all supported languages
+level1_name_en = Any
+level2_name_en = Beginner
+level3_name_en = Intermediate
+level4_name_en = Advanced
+
+[rooms]
+rooms = r1 r2 r3 r4 r5 r6 r7
+r1 = Rashid Auditorium
+r2 = Room 2
+r3 = Room 3
+r4 = Room 4
+r5 = Room 5
+r6 = Room 6
+r7 = Room 7
+
+[payment]
+currency    = USD
+open        = 0
+type        = TPF
+invoices    = 1
+products    = registration
+
+[product_shirts]
+name_en     = T-Shirts (first-come, first-serve; sizes limited)
+prices      = 2
+
+[product_shirts_price1]
+name_en     = Single shirt
+amount      = 10
+
+[product_shirts_price2]
+name_en     = Two shirts
+amount      = 15
+
+[product_registration]
+name_en     = Registration (includes talks, breakfast, lunch, socials)
+prices      = 2
+
+[product_registration_price1]
+name_en     = Regular registration
+amount      = 75
+
+[product_registration_price2]
+name_en     = Student registration
+amount      = 40
+
+[product_saturdayelect]
+name_en     = Saturday elective (optional)
+prices      = 2
+
