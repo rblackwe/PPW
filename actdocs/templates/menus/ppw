@@ -15,6 +15,9 @@ PPW 10
 <a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a>
 [% END %]
 [% WRAPPER menus/item %]
+<a href="[% make_uri('mooseintro.html') %]">[% site.moose_name %]</a>
+[% END %]
+[% WRAPPER menus/item %]
 <a href="[% make_uri('sponsors.html') %]">Sponsors</a>
 [% END %]
 [% WRAPPER menus/item %]

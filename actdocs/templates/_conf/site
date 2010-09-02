@@ -24,6 +24,7 @@
       track_hard = 'advanced',
 
       ztp_name = 'From Zero to Perl',
+      moose_name = 'Intro to Moose',
       peter_scott_name = 'Maintaining Code While Staying Sane',
   };
   
