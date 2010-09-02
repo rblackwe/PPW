@@ -1,6 +1,6 @@
 REMOTE_USER=wright
-REMOTE_HOST=test.mongueurs.net
-REMOTE_ROOT=yapc
+REMOTE_HOST=profane.mongueurs.net
+REMOTE_ROOT=ppw2010-test
 RSYNC=$(shell which rsync)
 RSYNC_ARGS=-avz --delete --exclude '.svn'
 
