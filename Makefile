@@ -7,10 +7,10 @@ RSYNC_ARGS=-avz --delete --exclude '.svn'
 SSH=$(shell which ssh)
 
 deploy:
-	$(RSYNC) $(RSYNC_ARGS) www/ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_ROOT)/www/
-	$(RSYNC) $(RSYNC_ARGS) act/ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_ROOT)/act/
+	$(RSYNC) $(RSYNC_ARGS) wwwdocs/ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_ROOT)/wwwdocs/
+	$(RSYNC) $(RSYNC_ARGS) actdocs/ $(REMOTE_USER)@$(REMOTE_HOST):$(REMOTE_ROOT)/actdocs/
 
 commit:
-	$(SSH) $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_ROOT)/act && svn ci -m "$(MSG)"'
-	$(SSH) $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_ROOT)/www && svn ci -m "$(MSG)"'
+	$(SSH) $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_ROOT)/actdocs && svn ci -m "$(MSG)"'
+	$(SSH) $(REMOTE_USER)@$(REMOTE_HOST) 'cd $(REMOTE_ROOT)/wwwdocs && svn ci -m "$(MSG)"'
 
