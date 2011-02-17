@@ -1,0 +1,59 @@
+[% WRAPPER ui title = loc("Log in") %]
+<center>
+
+<form method="POST" action="[% action %]">
+<input type="hidden" name="destination" value="[% destination %]">
+
+[% IF error;
+     WRAPPER error_ui;
+       loc('Incorrect login or password');
+     END;
+   END
+%]
+<table border="1" cellpadding="10" cellspacing="0"><tr><td>
+<table border="0" cellpadding="0" cellspacing="10">
+
+<tr>
+   <td align="right">{{Login}}</td>
+   <td>&nbsp;</td>
+   <td>
+      <input type="text" name="credential_0" size="25" maxlength="60" />
+   </td>
+</tr>
+<tr>
+   <td align="right">
+      {{Password}}
+   </td>
+   <td>&nbsp;</td>
+   <td>
+      <input type="password" name="credential_1" size="25" maxlength="60" />
+   </td>
+</tr>
+<tr>
+   <td>&nbsp;</td>
+   <td>&nbsp;</td>
+   <td>
+      <font size="-1"><input type="checkbox" name="credential_2" />{{Remember me on this computer}}</font>
+   </td>
+</tr>
+<tr>
+   <td colspan="3" align="right">
+      <input type="submit" name="join" value="{{Submit}}" />
+   </td>
+</tr>
+</table>
+</td></tr></table>
+
+</form>
+
+<p>Haven't registered yet?  Then  <a href="register">register yourself</a> first.</p>
+<p>[% loc('Forgot your password?', make_uri('changepwd')) %]</p>
+
+<p>
+<font size="-1">
+ [% loc('This site uses cookies to authenticate logged in users.', domain) %]
+</font>
+</p>
+
+</center>
+[% END %]

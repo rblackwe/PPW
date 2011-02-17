@@ -1,0 +1,31 @@
+[% WRAPPER ui title = "The Pittsburgh Perl Workshop" %]
+[% PROCESS _conf/main %]
+[% PROCESS common %]
+
+<p>
+  The [% site.event_name %] is a low-cost technical conference held at the
+  <a href="location.html">Carnegie Mellon University's Oakland
+      Campus</a>. The workshop will be held on [% site.event_date %]. 
+  You can sign up for the announcement mailing list at
+  <a href="[% site.list_announce_url %]">Google Groups</a>.
+</p>
+
+<h2>Latest News</h2>
+[% FOREACH item = global.news(4) %]
+<div class="news-entry">
+<p class="news-header">
+  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-title">[% item.title %]</span>
+</p>
+<div class="news-text">
+    [% item.content %]
+</div>
+</div>
+[% END %]
+<p>
+    <a href="[% make_uri('news') %]" class="news-link">
+        Older announcements
+    </a>
+</p>
+
+[% END %]

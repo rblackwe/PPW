@@ -1,0 +1,71 @@
+[%
+  restaurants = [
+    {
+        name    = 'Ali Baba',
+        cuisine = 'Middle Eastern',
+        price   = 'Cheap ($5-8)',
+        notes   = 'Hummus, sleek',
+        uri     = 'http://www.ibp.com/pit/ali-baba/',
+        address = '404 S. Craig Street',
+        glatlng = '40440556,-79996111,15484586090634480024',
+    },
+    {
+        name    = 'Spice Island Tea House',
+        cuisine = 'Thai/Burmese/Malaysian/Indonesian',
+        price   = 'Average ($10-14)',
+        notes   = 'Tea, vegan entress',
+        address = '253 Atwood Street',
+        glatlng = '37062500,-95677068,817180856138721389',
+    },
+    {
+        name    = 'Union Grill',
+        cuisine = 'American',
+        price   = 'Cheap ($7-10)',
+        notes   = 'Anything with voodoo sauce',
+        address = '413 S. Craig Street',
+        map     = 'http://maps.google.com/maps?f=q&hl=en&q=Union+Grill,+Pittsburgh+PA&ie=UTF8&ll=40.444845,-79.949087&spn=0.002699,0.004807&z=18&iwloc=A&om=1',
+        glatlng = '40440556,-79996111,1436794467417370849',
+    },
+    {
+        name    = 'Star of India',
+        cuisine = 'Indian',
+        address = '412 S. Craig Street',
+        glatlng = '40440556,-79996111,2503387347547490096',
+    },
+    {
+        name    = 'Lu Lu Noodles',
+        cuisine = 'Chinese and Asian Soups',
+        price   = 'Cheap ($5-8)',
+        notes   = 'Ramen Soup',
+        map     = 'http://maps.google.com/maps?f=q&hl=en&q=%22Lu+Lu+Noodles%22++Pittsburgh+PA&ie=UTF8&ll=40.445322,-79.948508&spn=0.005397,0.009613&z=17&iwloc=A&om=1',
+        address = '400 S. Craig Street',
+        glatlng = '40440556,-79996111,4942794663516513368',
+    },
+    {
+        name    = 'Primanti Brothers',
+        uri     = 'http://www.rackdeal.com/primantibrothers/'
+        cuisine = 'Sandwiches',
+        price   = 'Cheap ($5-8)',
+        notes   = 'Pittsburgh classic with fries and slaw on the sandwich',
+        address = '3803 Forbes Avenue',
+        glatlng = '40440556,-79996111,213904831012322280',
+    },
+  ]
+%]
+
+<dl>
+[% FOREACH eatery = restaurants %]
+<dt class="eatery-name">[% IF eatery.uri %]<a href="[% eatery.uri | html %]">[% eatery.name | html %]</a>[% ELSE %][% eatery.name | html %][% END %]</dt>
+<dd class="eatery-details">
+<span class="eatery-cuisine">[% eatery.cuisine | html %]</span>
+[% IF eatery.price %]
+  <span class="eatery-price">[% eatery.price | html %]</span>
+[% END %]
+[% IF eatery.notes %]
+  <span class="eatery-notes">[% eatery.notes | html %]</span>
+[% END %]
+  <span class="eatery-address">[% eatery.address | html %]</span>
+  <span class="eatery-google-map">(<a href="[% FILTER html %][% IF eatery.map %][% eatery.map %][% ELSE %]http://maps.google.com/maps?q=[% "${eatery.name}, ${eatery.address}, Pittsburgh PA" | uri %]&latlng=[% eatery.glatlng | uri %][% END %][% END %]">Google Map</a>)</span>
+</dd>
+[% END %]
+</dl>

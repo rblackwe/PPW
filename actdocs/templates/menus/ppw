@@ -1,0 +1,50 @@
+[% WRAPPER menus/section %]
+[% PROCESS _conf/main %]
+PPW 10
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('index.html') %]">About</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('costs.html') %]">Price</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('location.html') %]">Location</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('mooseintro.html') %]">[% site.moose_name %]</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('sponsors.html') %]">Sponsors</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('faq.html') %]">FAQ</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('news') %]">{{News}}</a>
+[% END %]
+[% IF global.request.user.is_orga %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('newsadmin') %]">{{News Administration}}</a>
+[% END %]
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('wiki') %]">Wiki</a>
+[% END %]
+[% IF global.request.user.is_orga or global.config.survey_open %]
+    [% WRAPPER menus/item %]
+    <a href="[% make_uri('survey.html') %]">Survey</a>
+    [% END %]
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2008">PPW 08 Site</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2007">PPW 07 Site</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://2006.pghpw.org">PPW 06 Site</a>
+[% END %]

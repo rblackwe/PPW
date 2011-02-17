@@ -1,0 +1,43 @@
+[%
+  attractions = [
+    {
+        name    = 'Carnegie Museum of Art',
+        price   = '$10 general admission ($6 for students)',
+        notes   = '"Offers a distinguished collection of contemporary art, works of American art from the late nineteenth century, French Impressionist and Post-Impressionist paintings, and European and American decorative arts from the late seventeenth century to the present."',
+        address = '4400 Forbes Ave',
+        map     = 'http://maps.google.com/maps?f=q&hl=en&q=4400+Forbes+Ave,+Pittsburgh+PA++%22Carnegie+Museum-History%22&sll=40.444012,-79.950361&sspn=0.010794,0.019226&ie=UTF8&ll=40.444367,-79.950364&spn=0.010794,0.019226&z=16&iwloc=A&om=1'
+        uri     = 'http://www.cmoa.org/',
+        glatlng = '40440556,-79996111,7305135580407718132',
+    },
+    {
+        name    = 'Phipps Conservatory and Botanical Gardens',
+        price   = '$7.50 ($5.50 for students)',
+        notes   = '"Newly expanded, Phipps features a Victorian-era Conservatory holding thousands of exotic plants and flowers.  Numerous gardens surround the original 1893 glasshouse.  The Welcome Center, opened in March 2005, offers a cafe for hungry visitors."',
+        map     = 'http://maps.google.com/maps?f=q&hl=en&q=1+Schenley+Park,+Pittsburgh+PA+%22Conservatory+Phipps%22&sll=40.434248,-79.952183&sspn=0.010796,0.019226&ie=UTF8&ll=40.43496,-79.95163&spn=0.010796,0.019226&z=16&iwloc=A&om=1',
+        address = '1 Schenley Park',
+        uri     = 'http://phipps.conservatory.org/',
+        glatlng = '40390932,-80045155,3961903042054614218',
+    },
+  ]
+%]
+
+
+<dl>
+[% FOREACH a = attractions %]
+<dt class="attraction-name">[% a.name | html %]</dt>
+<dd class="attraction-description">
+  <span class="attraction-address">[% a.address | html %]</span>
+  <span class="attraction-google-map">(<a href="[% FILTER html %][% IF a.map %][% a.map %][% ELSE %]http://maps.google.com/maps?q=[% "${a.name}, ${a.address}, Pittsburgh PA" | uri %]&latlng=[% a.glatlng | uri %][% END %][% END %]">Google Map</a>)</span>
+[% IF a.uri %]
+  <span class="attraction-uri"><a href="[% a.uri | html %]"
+  >[% a.name | html %] web site</a></span>
+[% END %]
+[% IF a.price %]
+  <span class="attraction-price">[% a.price | html %]</span>
+[% END %]
+[% IF a.notes %]
+  <span class="attraction-notes">[% a.notes | html %]</span>
+[% END %]
+</dd>
+[% END %]
+</dl>

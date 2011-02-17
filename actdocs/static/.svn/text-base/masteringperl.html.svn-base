@@ -1,0 +1,49 @@
+[% WRAPPER ui title = "Mastering Perl" %]
+[% PROCESS _conf/main %]
+
+<h1>[% page.title %]</h1>
+
+<h2>A one-day course on creating professional, enterprise-quality Perl programs.</h2>
+
+<p>The Pittsburgh Perl Workshop is happy to announce "Mastering Perl," 
+a special course, to be taught by returning PPW speaker, brian d. foy.</p>
+
+<p>There is an additional registration fee to take this course. Please be sure
+to select the "Mastering Perl" option when registering. Seating in this
+course is limited.</p>
+
+<h2>About the course.</h2>
+
+<p>In this tutorial, brian d foy will cover aspects of his latest book,
+Mastering Perl, which is practical advice for working programmers on creating
+professional, enterprise-quality Perl programs. He will cover four major
+topics:
+
+<ul>
+    <li>benchmarking and the theory of measurement to show you not only how to
+    measure something but understand and interpret the results</li>
+
+    <li>configuring a Perl program so users can affect its behavior with
+    changing the source, including environment variables, command-line
+    switches, and configuration files</li>
+
+    <li>recording the operation of a program through logging to show errors,
+    report progress, and record</li>
+
+    <li>debugging, patching, and modifying existing module code without
+    changing the original source</li>
+</ul>
+</p>
+
+<p>Target audience: intermediate through advanced Perl programmers.</p>
+
+<h2>About the instructor.</h2> 
+
+<p>
+brian d foy is the co-author of Learning Perl and Intermediate Perl, the author
+of Mastering Perl, the publisher of The Perl Review, the author of dozens of
+Perl modules, and a Perl trainer and consultant for Stonehenge Consulting
+Services, Inc.
+</p>
+
+[% END %]
