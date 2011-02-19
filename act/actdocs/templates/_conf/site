@@ -3,11 +3,11 @@
       event_name = '<span class="event-name"><span class="city">Pittsburgh</span>
                       <span class="language">Perl</span>
                       <span class="event">Workshop</span></span>',
-      event_short_name = '<span class="event-name">PPW 2010</span></span>',
-      event_date = '<span class="event-date"><span class="month">October</span>
-                      <span class="day">9&#8211;10</span>
-                      <span class="year">2010</span></span>',
-      event_year = '2010'
+      event_short_name = '<span class="event-name">PPW 2011</span></span>',
+      event_date = '<span class="event-date"><span class="month">late October</span>
+                      <span class="day"></span>
+                      <span class="year">2011</span></span>',
+      event_year = '2011'
       event_theme = '<span class="event-theme">UNDEF</span>',
       
       list_general  = 'pittsburgh-perl-workshop@googlegroups.com',

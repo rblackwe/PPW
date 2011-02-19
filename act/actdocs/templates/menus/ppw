@@ -11,11 +11,10 @@ PPW 10
 [% WRAPPER menus/item %]
 <a href="[% make_uri('location.html') %]">Location</a>
 [% END %]
-[% WRAPPER menus/item %]
-<a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a>
-[% END %]
-[% WRAPPER menus/item %]
-<a href="[% make_uri('mooseintro.html') %]">[% site.moose_name %]</a>
+[% IF 0 %]
+    [% WRAPPER menus/item %]
+    <a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a>
+    [% END %]
 [% END %]
 [% WRAPPER menus/item %]
 <a href="[% make_uri('sponsors.html') %]">Sponsors</a>
@@ -38,6 +37,12 @@ PPW 10
     [% WRAPPER menus/item %]
     <a href="[% make_uri('survey.html') %]">Survey</a>
     [% END %]
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2010">PPW 10 Site</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://yapc10.org">YAPC Pittsburgh 2009</a>
 [% END %]
 [% WRAPPER menus/item %]
 <a href="http://pghpw.org/ppw2008">PPW 08 Site</a>
