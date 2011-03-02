@@ -3,21 +3,24 @@
 
 <h2>Registration</h2>
 
+[% IF ! global.config.payment_open %]
+<p>Prices have not yet been set for this year&#39;s event.   We hope to have
+this information available soon.   We aim to provide the lowest possible cost
+event while still maintaining ground-breaking quality.</p>
+[% ELSE %]
 <p>Ticket prices are:</p>
 
 <table width="50%">
     <tr>
-        <th>Regular price</th><td align=right>$75.00</td>
+        <th>Regular price</th><td align=right>$[% global.config.product_registration_price1_amount %]</td>
         </tr><tr>
-        <th>Student price</th><td align=right>$40.00</td>
+        <th>Student price</th><td align=right>$[% global.config.product_registration_price2_amount %]</td>
         </tr>
     <tr>
-        <th><a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a> addon</th><td align=right>$100.00</td></tr><tr>
-    </tr>
-    <tr>
-        <th><a href="[% make_uri('mooseintro.html') %]">[% site.moose_name %]</a> addon</th><td align=right>$100.00</td></tr><tr>
+        <th><a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a> addon</th><td align=right>$[% global.config.product_ztp_price1_amount %]</td></tr><tr>
     </tr>
 </table>
+[% END %]
 
 
 <h2>What you get:</h2>
@@ -28,6 +31,7 @@
     <li>Admission to Friday- and Saturday-night social events</li>
     <li>Breakfast and Lunch, both days</li>
     <li>Opportunity to talk to Perl job recruiters</li>
+    <li>Access to dozens of CPAN authors and key Perl community members</li>
     <li>Admission to Open-space forums, BOF's, and other great activities</li>
 </ul>
 
