@@ -38,7 +38,7 @@ one day.</p>
 <h2>How can I contact you?</h2>
 
 <p>You can contact the conference organizers by sending email to
-<em>ppw-cabal</em> at <em>googlegroups.com</em>.</p>
+<em>organizers</em> at <em>pghpw</em> dot <em>org</em>.</p>
 
 <h2>Do I have to pick the track I want?</h2>
 
@@ -61,12 +61,19 @@ concluded.</p>
 
 <h2>When will registration open?</h2>
 
-<!--
+[% IF global.config.registration_open %]
+
 <p>Registration is now open!  Be sure to <a href="[% make_uri('purchase') %]">
 purchase your event ticket today!</a></p>
--->
 
-<p>Registration will open near the end of August</p>
+[% ELSE %]
+
+<p>Our goal is to provide a high-quality, low-cost experience for everybody.
+This means we need to negotiate with our vendors and budget our costs before we
+can set prices for the event.  Once we have done that, we will open
+registration.  This usually happens two to three months prior to the event.</p>
+
+[% END %]
 
 <h2>What is this year's theme?</h2>
 
