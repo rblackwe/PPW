@@ -3,7 +3,7 @@ REMOTE_HOST=spectre.mongueurs.net
 REMOTE_ROOT_TEST=ppw2011-test
 REMOTE_ROOT_REPO=ppw2011
 RSYNC=$(shell which rsync)
-RSYNC_ARGS=-avz --delete --exclude '.svn'
+RSYNC_ARGS=-avz --delete --exclude '.svn' --exclude '*.swp'
 
 SSH=$(shell which ssh)
 
