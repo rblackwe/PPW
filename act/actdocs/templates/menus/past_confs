@@ -1,0 +1,19 @@
+[% PROCESS _conf/main %]
+[% WRAPPER menus/section %]
+Previous events
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2010">PPW 2010</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://yapc10.org">YAPC Pittsburgh 2009</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2008">PPW 2008</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2007">PPW 2007</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="http://2006.pghpw.org">PPW 2006</a>
+[% END %]

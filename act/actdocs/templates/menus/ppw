@@ -38,18 +38,3 @@ PPW [% site.event_year %]
     <a href="[% make_uri('survey.html') %]">Survey</a>
     [% END %]
 [% END %]
-[% WRAPPER menus/item %]
-<a href="http://pghpw.org/ppw2010">PPW 10 Site</a>
-[% END %]
-[% WRAPPER menus/item %]
-<a href="http://yapc10.org">YAPC Pittsburgh 2009</a>
-[% END %]
-[% WRAPPER menus/item %]
-<a href="http://pghpw.org/ppw2008">PPW 08 Site</a>
-[% END %]
-[% WRAPPER menus/item %]
-<a href="http://pghpw.org/ppw2007">PPW 07 Site</a>
-[% END %]
-[% WRAPPER menus/item %]
-<a href="http://2006.pghpw.org">PPW 06 Site</a>
-[% END %]

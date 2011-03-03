@@ -6,5 +6,6 @@
 [% PROCESS menus/events %]
 [% PROCESS menus/treasurer %]
 [% PROCESS menus/admin %]
+[% PROCESS menus/past_confs %]
 [% PROCESS menus/act_confs %]
 </dl>
