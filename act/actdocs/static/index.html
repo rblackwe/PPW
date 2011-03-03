@@ -2,13 +2,21 @@
 [% PROCESS _conf/main %]
 [% PROCESS common %]
 
+<div id='followus'>
+    <p>Follow us on:</p>
+    <ul>
+        <li><a href="http://www.facebook.com/group.php?gid=302964522780">Facebook</a></li>
+        <li><a href="https://twitter.com/pghpw">Twitter</a></li>
+        <li><a href="[% site.list_announce_url %]">Google Groups</a></li>
+    </ul>
+</div>
 <p>
   The [% site.event_name %] is a low-cost technical conference held at the
   <a href="location.html">Carnegie Mellon University's Oakland
       Campus</a>. The workshop will be held [% site.event_date %]. 
-  You can sign up for the announcement mailing list at
-  <a href="[% site.list_announce_url %]">Google Groups</a>.
 </p>
+
+<br clear="all" />
 
 <h2>Latest News</h2>
 [% FOREACH item = global.news(4) %]

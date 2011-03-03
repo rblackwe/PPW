@@ -206,3 +206,29 @@ body {
     padding: 0px;
 }
 
+
+/* followus - The "Follow us" box on the main page. */
+#followus {
+    float: right;
+    max-width: 125px;
+    margin-left: 5px;
+    border-style: outset;
+    padding: 0px;
+}
+
+#followus p {
+   font-size: larger;
+   margin: 5px;
+}
+
+#followus ul {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+#followus li {
+   padding: 3px;
+   margin-left: 2px;
+}
+
