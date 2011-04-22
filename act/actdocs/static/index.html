@@ -34,7 +34,7 @@
 [% FOREACH item = global.news(4) %]
 <div class="news-entry">
 <p class="news-header">
-  <span class="news-date">[% date_format(item.datetime, 'date_short') %]</span>
+  <span class="news-date">[% date_format(item.datetime, '%b %d, %Y') %]</span>
   <span class="news-title">[% item.title %]</span>
 </p>
 <div class="news-text">

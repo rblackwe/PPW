@@ -5,7 +5,7 @@
  <div class="newsbox">
  [% FOREACH n = news %]
  <div class="news-entry">
- <span class="news-date">[% date_format(n.datetime, 'date_short') %]</span>
+ <span class="news-date">[% date_format(n.datetime,'%b %d, %Y' ) %]</span>
  <span class="news-title">[% n.title %]</span>
  <div class="news-text">
    [% texts.${loop.index} %]
