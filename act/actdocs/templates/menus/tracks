@@ -1,0 +1,9 @@
+[% WRAPPER menus/section %]
+Tracks
+[% WRAPPER menus/item %]
+<a href="[% make_uri('perlapps.html') %]">Perl Applications</a>
+[% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('perlops.html') %]">Perl Ops</a>
+[% END %]
+[% END %]
