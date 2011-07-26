@@ -129,9 +129,10 @@ body {
 
 .news-title {
     float: left;
-    margin-left: 100px;
+    margin-left: 15px;
     position: absolute;
     font-weight: bold;
+    font-size: larger;
 }
 
 .news-text {
