@@ -6,7 +6,4 @@ Tracks
 [% WRAPPER menus/item %]
 <a href="[% make_uri('perlops.html') %]">Perl Ops</a>
 [% END %]
-[% WRAPPER menus/item %]
-<a href="[% make_uri('mooseintro.html') %]">Intro to Moose</a>
-[% END %]
 [% END %]
