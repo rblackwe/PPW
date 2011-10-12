@@ -35,6 +35,6 @@ PPW [% site.event_year %]
 [% END %]
 [% IF global.request.user.is_admin or global.config.survey_open %]
     [% WRAPPER menus/item %]
-    <a href="[% make_uri('survey.html') %]">Survey</a>
+    <a href="http://ppw2011.yapc-surveys.org/">Survey</a>
     [% END %]
 [% END %]
