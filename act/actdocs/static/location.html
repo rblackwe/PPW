@@ -1,19 +1,30 @@
 [% WRAPPER ui title = "Location" %]
 [% PROCESS _conf/main %]
+
 <h1>Workshop Location</h1>
-
-<div class="naked-content">
-<p>
-    The [% site.event_name %] will be held at <a href="http://www.pti.edu">The
-    Pittsburgh Technical Institute</a> in Oakdale, PA (about 15 minutes from
-    Pittsburgh International Airport.)
-</p>
-<p>
-    PTI is located just minutes from Robinson Township, an area filled with plenty
-    of shopping, entertainment, eating, and lounging options. 
-</p>
-
+<div class="location">
+    <span class="location-name">Pittsburgh Technical Institute</span>
+    <div class="location-text">
+    <p>
+        The [% site.event_name %] will be held at <a href="http://www.pti.edu">The
+        Pittsburgh Technical Institute</a> in Oakdale, PA (about 15 minutes from
+        Pittsburgh International Airport.)
+    </p>
+    <p>
+        PTI is located just minutes from Robinson Township, an area filled with plenty
+        of shopping, entertainment, eating, and lounging options. 
+    </p>
+    </div>
+    <div class="location-detail">
+        <span class="location-cat">Address</span>
+        <span class="location-item">
+        1111 McKee Road<br />
+        Oakdale PA, 15071<br clear="all" />
+        </span>
+    </div>
 </div>
+
+<br>
 <h1>Where to Stay</h1>
 
 <div class="location">
@@ -26,6 +37,13 @@
         </p>
     </div>
 
+    <div class="location-detail">
+        <span class="location-cat">Address</span>
+        <span class="location-item">
+            100 Chauvet Drive<br />
+            Pittsburgh, PA 15275
+        </span>
+    </div>
     <div class="location-detail">
         <span class="location-cat">Phone</span>
         <span class="location-item">
@@ -41,7 +59,6 @@
     </div>
 </div>
 
-
 <h1>Where to Park</h1>
 <div class="naked-content">
 <p>
@@ -49,6 +66,10 @@
   the school.   There is no charge to park.
 </p>
 </div>
+
+<h1>Map</h1>
+<iframe src="http://mapsengine.google.com/map/embed?mid=zvzKqyrqos1k.kGIBQ--5I9zk" width="580" height="640"></iframe>
+
 
 <h1>Where to Eat</h1>
 <div class="important-note">
