@@ -1,6 +1,5 @@
 <dl>
 [% PROCESS menus/ppw %]
-[% PROCESS menus/tracks %]
 [% PROCESS menus/user %]
 [% PROCESS menus/users %]
 [% PROCESS menus/talks %]
