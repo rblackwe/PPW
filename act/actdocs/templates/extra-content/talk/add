@@ -1,7 +1,8 @@
 <div> <em>Note: All invitations to speak at [% site.event_short_name %] are conditional
-upon your consenting to being recorded.  If you do not consent to
-being recorded, we cannot offer your a speaking slot.  Please note,
-however, that even through your talk will be recorded, you can elect
-not to have the recording shared.  In order words, if you don't
-want to be a part of the [% site.event_short_name %] podcasts, you don't have to be.
+upon your consenting to being recorded.  All recordings are the property of The Pittsburgh
+Perl Workshop.   PPW reserves the right to share or re-broadcast said recordings.
+
+If you do not consent to being recorded, it is your responsibility to notify an
+event organizer prior to your scheduled speaking time.
+
 Please see the FAQ if you have any questions.</em> </div>
