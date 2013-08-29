@@ -4,6 +4,11 @@ body {
     color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #1F5294;
+    letter-spacing: 0.75px;
+}
+
 #doc {
     width: 850px;
     position: relative;
@@ -33,6 +38,8 @@ body {
     margin-top: 0px;
     margin-left: 21px;
     padding: 0px;
+    text-align: center;
+    font-size: 225%;
 }
 
 #bd {
@@ -107,7 +114,7 @@ body {
     color: #fff;
 }
 #nav dl dd {
-    margin-left: 30px;
+    margin-left: 12px;
     padding-left: 0px;
 }
 
@@ -146,11 +153,6 @@ body {
 
 .location-name {
     font-weight: bold;
-    margin-left: 100px;
-}
-
-.location-text {
-    margin-left: 100px;
 }
 
 .location-cat {
@@ -166,7 +168,6 @@ body {
 
 .location-item {
     float: left;
-    margin-left: 100px;
     margin-bottom: 1em;
 }
 
@@ -183,8 +184,8 @@ body {
 .attraction-price,
 .attraction-notes { display: block; }
 
-.naked-content {
-    margin-left: 100px;
+.naked-content, .location-name, .location-text, .location-item {
+    margin-left: 40px;
 }
 
 .sponsor-logo {
