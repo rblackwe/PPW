@@ -1,7 +1,7 @@
 [% WRAPPER ui title = "Event Price" %]
 [% PROCESS _conf/main %]
 
-<h2>Registration</h2>
+<h2>Registration (Saturday, October 5th and Sunday, October 6th)</h2>
 
 [% IF ! global.config.payment_open %]
 <p>Prices have not yet been set for this year&#39;s event.   We hope to have
@@ -21,13 +21,11 @@ event while still maintaining ground-breaking quality.</p>
         <th>[% global.config.product_registration_price3_name_en %]</th><td align=right>$[% global.config.product_registration_price3_amount %]</td>
     </tr>
 </table>
-[% END %]
 
-
-<h2>What you get:</h2>
+<h3>What you get:</h3>
 
 <ul>
-    <li>Admission to the two-day main event, including keynotes, talks.</li>
+    <li>Admission to the two-day (Saturday and Sunday) main event, including keynotes, talks.</li>
     <li>Admission to Friday- and Saturday-night social events</li>
     <li>Breakfast and Lunch, both days</li>
     <li>Opportunity to talk to Perl job recruiters</li>
@@ -35,5 +33,31 @@ event while still maintaining ground-breaking quality.</p>
     <li>Admission to Open-space forums, BOF's, and other great activities</li>
 </ul>
 
+<h3>Can't afford it?</h3>
+
+<ul>
+    <li>Consider <a href="[% make_uri('newtalk') %]>">Submitting a talk.</a>  All speakers may opt for free registration.</li>
+    <li>We do have some conference volunteer positions available for PTI students that would be willing to work part of the event in exchange for a free pass.   Contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a> for more information.</li>
+</ul>
+
+<h2>Add-on courses (Friday, October 4th)</h2>
+
+<table width="50%">
+    <tr>
+        <th>From Zero to Perl</th><td align=right>$[% global.config.product_ztp_price1_amount %]</td>
+    </tr><tr>
+        <th>Introduction to Git</th><td align=right>$[% global.config.product_git_price1_amount %]</td>
+    </tr>
+</table>
+
+<h3>What you get:</h3>
+
+<ul>
+    <li>Admission to an additional full day of instruction on Friday, October 4th.</li>
+    <li>Breakfast and Lunch on Friday</li>
+    <li>A special PPW USB flash drive pre-loaded with all course materials.</li>
+</ul>
+
+[% END %]
 [% END %]
 
