@@ -1,0 +1,6 @@
+[% WRAPPER menus/section %]
+Add-on classes
+[% WRAPPER menus/item %]
+<a href="[% make_uri('zerotoperl.html') %]">From Zero to Perl</a>
+[% END %]
+[% END %]
