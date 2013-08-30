@@ -11,6 +11,9 @@ PPW [% site.event_year %]
 [% WRAPPER menus/item %]
 <a href="[% make_uri('location.html') %]">Location</a>
 [% END %]
+[% WRAPPER menus/item %]
+<a href="[% make_uri('culture.html') %]">Expectations</a>
+[% END %]
 [% IF 0 %]
     [% WRAPPER menus/item %]
     <a href="[% make_uri('zerotoperl.html') %]">[% site.ztp_name %]</a>
