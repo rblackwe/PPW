@@ -3,6 +3,9 @@
 Previous events
 [% END %]
 [% WRAPPER menus/item %]
+<a href="http://pghpw.org/ppw2011">PPW 2011</a>
+[% END %]
+[% WRAPPER menus/item %]
 <a href="http://pghpw.org/ppw2010">PPW 2010</a>
 [% END %]
 [% WRAPPER menus/item %]
