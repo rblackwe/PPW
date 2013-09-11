@@ -8,20 +8,6 @@
 this information available soon.   We aim to provide the lowest possible cost
 event while still maintaining ground-breaking quality.</p>
 [% ELSE %]
-<p>Ticket prices are:</p>
-
-<table width="50%">
-    <tr>
-        <th>[% global.config.product_registration_price1_name_en %]</th><td align=right>$[% global.config.product_registration_price1_amount %]</td>
-    </tr>
-    <tr>
-        <th>[% global.config.product_registration_price2_name_en %]</th><td align=right>$[% global.config.product_registration_price2_amount %]</td>
-    </tr>
-    <tr>
-        <th>[% global.config.product_registration_price3_name_en %]</th><td align=right>$[% global.config.product_registration_price3_amount %]</td>
-    </tr>
-</table>
-
 <h3>What you get:</h3>
 
 <ul>
@@ -31,7 +17,24 @@ event while still maintaining ground-breaking quality.</p>
     <li>Opportunity to talk to Perl job recruiters</li>
     <li>Access to dozens of CPAN authors and key Perl community members</li>
     <li>Admission to Open-space forums, BOF's, and other great activities</li>
+    <li>Discounts on Friday add-on courses (below)</li>
 </ul>
+
+<h3>Standard admission:</h3>
+
+<table width="50%">
+    <tr>
+        <th>[% global.config.product_registration_price1_name_en %]</th><td align=right><em>$[% global.config.product_registration_price1_amount %]</em></td>
+    </tr>
+    <tr>
+        <th>[% global.config.product_registration_price2_name_en %]</th><td align=right><em>$[% global.config.product_registration_price2_amount %]</em></td>
+    </tr>
+    <tr>
+        <th>[% global.config.product_registration_price3_name_en %]</th><td align=right><em>$[% global.config.product_registration_price3_amount %]</em></td>
+    </tr>
+</table>
+
+<p>Advanced registration is required.</p>
 
 <h3>Can't afford it?</h3>
 
@@ -40,17 +43,13 @@ event while still maintaining ground-breaking quality.</p>
     <li>We do have some conference volunteer positions available for PTI students that would be willing to work part of the event in exchange for a free pass.   Contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a> for more information.</li>
 </ul>
 
+<h3>Have questions?</h3>
+
+<ul>
+    <li>Please contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a> for more information.</li>
+</ul>
+
 <h2>Add-on courses (Friday, October 4th)</h2>
-
-<table width="50%">
-    <tr>
-        <th><a href="[% make_urk('zerotoperl.html') %]">From Zero to Perl</a></th><td align=right>$[% global.config.product_ztp_price1_amount %] *</td>
-    </tr><tr>
-        <th>Introduction to Git</th><td align=right>$[% global.config.product_git_price1_amount %]</td>
-    </tr>
-</table>
-
-<p>* - We have several free spaces reserved for PTI students in the Zero to Perl course.   Please contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a>.</p>
 
 <h3>What you get:</h3>
 
@@ -58,6 +57,25 @@ event while still maintaining ground-breaking quality.</p>
     <li>Admission to an additional full day of instruction on Friday, October 4th.</li>
     <li>Breakfast and Lunch on Friday</li>
     <li>A special PPW USB flash drive pre-loaded with all course materials.</li>
+</ul>
+
+<h3>Add-on fees:</h3>
+
+<table width="95%">
+    <tr>
+        <th><a href="[% make_uri('zerotoperl.html') %]">From Zero to Perl</a></th><td><em>$[% global.config.product_ztp_price1_amount %]</em> with your PPW registration,  $[% global.config.product_ztp_price2_amount %] if purchased by itself.</td>
+        </tr><tr>
+        <th><a href="[% make_uri('git.html') %]">Introduction to Git</a></th><td><em>Free!</em> with your PPW registration,  $[% global.config.product_git_price2_amount %] if purchased by itself.</td>
+    </tr>
+</table>
+
+<p>Space is limited in both add-on classes.   Advanced registration is required.</p>
+
+<h3>Can't afford it?</h3>
+
+<ul>
+    <li>How can you afford not to?    Where else are you going to have the opportunity to learn an entire programming language in just one weekend for such a low price?</li>
+    <li>We do have several free spaces reserved for PTI students in the Zero to Perl course.   Please contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a>.</li>
 </ul>
 
 [% END %]
