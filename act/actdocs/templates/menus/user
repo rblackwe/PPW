@@ -1,7 +1,7 @@
 <!-- user menu -->
 [% IF global.request.user %]
    [% WRAPPER menus/section %]
-   Logged in as [% global.request.user.login %]
+   <a href="[% make_uri('main') %]">Logged in as [% global.request.user.login %]</a>
    [% END %]
    [% WRAPPER menus/item %]
    <a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a>
