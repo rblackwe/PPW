@@ -24,13 +24,19 @@
    [% END %]
 [% ELSE %]
    [% WRAPPER menus/section %]
-   {{Register}}
+       [% IF global.config.registration_open %]
+       {{Register}}
+       [% ELSE %]
+       <a href="[% make_uri('main') %]">{{Log in}}</a>
+       [% END %]
    [% END %]
    [% WRAPPER menus/item %]
    <a href="[% make_uri('main') %]">{{Log in}}</a>
    [% END %]
-   [% WRAPPER menus/item %]
-   <a href="[% make_uri('register') %]">{{New user}}</a>
+   [% IF global.config.registration_open %]
+       [% WRAPPER menus/item %]
+       <a href="[% make_uri('register') %]">{{New user}}</a>
+       [% END %]
    [% END %]
    [% IF global.config.payment_open %]
        [% WRAPPER menus/item %]
