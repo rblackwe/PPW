@@ -1,0 +1,17 @@
+[% PROCESS _conf/main %]
+[% sponsor = site.sponsors.$who %]
+
+<div class="row">
+    <div class="col-md-4">
+        [% IF sponsor.logo %]
+        <img src="[% make_uri("images/sponsors/$sponsor.logo") %]" class="sponsor-logo" />
+        [% END %]
+    </div>
+    <div class="col-md-8">
+        <h3>[% sponsor.name %]</h3>
+        <p><a href="[% sponsor.url %]">[% sponsor.url %]</a></p>
+        [% sponsor.description %]
+    </div>
+</div>
+
+
