@@ -5,85 +5,57 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Language" content="[% global.request.language %]" />
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<meta name="keywords" content="pghpw Pittsburgh Perl Workshop" />
+<meta name="description" content="The Pittsburgh Perl Workshop" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="alternate" type="application/atom+xml" title="[% global.conference.name %]"
       href="http://pghpw.org/atom/[% global.request.language %].xml" />
-<link rel="stylesheet" type="text/css" href="[% make_uri( 'css/yui.css' ) %]" />
-<link rel="stylesheet" type="text/css" href="/css/schedule.css" />
-<link rel="stylesheet" type="text/css" href="[% make_uri( 'css/ppw2010.css' ) %]" />
-[% IF template.name == 'sponsors.html' %]
-<link rel="stylesheet" href="//api.donor.com/gadgets/css/donor-css.css" media="all" />
-[% END %]
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/act.js"></script>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-346453-3']);
-  _gaq.push(['_setDomainName', 'pghpw.org']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<link rel="stylesheet" href="[% make_uri( 'css/bootstrap.css' ) %]">
+<link rel="stylesheet" href="[% make_uri( 'css/main.css' ) %]">
 
-</script>
-<!-- compliance patch for microsoft browsers -->
-<!--[if lt IE 7]>
-<style type="text/css">
-  #hd {
-    background-image: none;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="[% make_uri('images/css/ppw/large-header-bg.png') %]", sizingMethod='scale');
-  }
-</style>
-<![endif]-->
+<script src="[% make_uri( 'js/vendor/modernizr-2.6.2.min.js' ) %]"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
 [%- IF title -%]<title>[% title  %]</title>[%- END -%]
 </head>
 <body>
-    <div id="doc" class="yui-t2">
-	<div id="hd">
-      <img src="[% make_uri('images/css/ppw/mast.jpg') %]" alt="" />
-      <h1 id="page-title">[% title %]</h1>
-	</div>
-	<div id="bd">
-		<div id="yui-main">
-			<div id="content" class="yui-b">
-				<!-- PUT MAIN COLUMN CODE HERE -->
-                <div id="content-text">[% content %]
-                    <div>[% TRY; IF template.name == 'talk/add'; %]
-                        <div> <em>Note: All invitations to speak at [% site.event_short_name %] are conditional
-                            upon your consenting to being recorded.  If you do not consent to
-                            being recorded, we cannot offer your a speaking slot.  Please note,
-                            however, that even through your talk will be recorded, you can elect
-                            not to have the recording shared.  In order words, if you don't
-                            want to be a part of the [% site.event_short_name %] podcasts, you don't have to be.
-                            Please see the FAQ if you have any questions.</em> </div>
-                        [% END; CATCH; END %]</div>
-                                  </div>
-			</div>
-		</div>
-		<div id="nav" class="yui-b">
-			<!-- PUT SECONDATY COLUMN CODE HERE -->
-			[% PROCESS menu %]
-		</div>
-	</div>
-	<div id="ft">
-        <p>Copyright &copy; 2006-[% site.event_year %] Pittsburgh Perl Mongers. Mast photo by <a href="http://flickr.com/people/whobee/">whobee@flickr</a>.</p>
-	</div>
-</div>
-[% IF template.name == 'sponsors.html' %]
-<script src="//api.donor.com/gadgets/js/donor.com.js" type="text/javascript"></script>
-<script>
-DW.api.dwcode = 'pf012';
-DW.api.run({
-  desig: 20002,
-  cacheLocal: true,
-  cacheServer: true
-});
-</script>
-[% END %]
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    [% PROCESS navbar %]
+
+    <div class="container page-content">
+        [% content %]
+    </div>
+
+    <div class="container footer">
+        <div class="row">
+        <p>Copyright &copy; 2006-[% site.event_year %] Pittsburgh Perl Workshop. Mast photo by <a href="http://flickr.com/people/whobee/">whobee@flickr</a>.</p>
+        </div>
+    </div>
+
+    <script src="[% make_uri('js/bootstrap.min.js') %]"></script>
+    <script src="[% make_uri('js/plugins.js') %]"></script>
+    <script src="[% make_uri('js/main.js') %]"></script>
+
+    <script type="text/javascript" src="/js/act.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-346453-3']);
+      _gaq.push(['_setDomainName', 'pghpw.org']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
 </body>
 </html>

@@ -1,51 +1,72 @@
 [% WRAPPER ui title = "The Pittsburgh Perl Workshop" %]
 [% PROCESS _conf/main %]
 [% PROCESS common %]
-
-<div id='followus'>
-    <p>Follow us on:</p>
-    <ul>
-        <li><a href="http://www.facebook.com/group.php?gid=302964522780">Facebook</a></li>
-        <li><a href="https://twitter.com/pghpw">Twitter</a></li>
-        <li><a href="[% site.list_announce_url %]">Google Groups</a></li>
-    </ul>
+<div class="row">
+    <div class="col-md-12 hidden-xs">
+        <img src="[% make_uri('img/mast.jpg') %]" style="text-align: middle; width: 100%; padding-bottom: 10px;">
+    </div>
 </div>
-
-<h2>About PPW</h2>
-<p>
-    Originally inspired by similar workshops in Europe, The [% site.event_name %]
-    was established in 2006 as a low-cost technical conference for users of the
-    Perl Programming Language.  The conference emphasizes real code and immediate,
-    practical solutions to common issues.
-</p>
-<p>
-    Now in its sixth year, PPW has the distinction of being the oldest 
-    event of its type in the country.   Key members of the Perl
-    Community travel from all across the country each year to participate in
-    this event.
-</p>
-<p>
-    For the first time ever, PPW 2013 will be held at the Pittsburgh Technical
-    Institue in Oakdale, PA.   The workshop will be held October 4th through
-    6th, 2013.
-</p>
-
-<h2>Latest News</h2>
-[% FOREACH item = global.news(8) %]
-<div class="news-entry">
-<p class="news-header">
-  <span class="news-date">[% date_format(item.datetime, '%b %d, %Y') %]</span>
-  <span class="news-title">[% item.title %]</span>
-</p>
-<div class="news-text">
-    [% item.content %]
+<div class="row">
+    <div class="h1 col-xs-12">The Pittsburgh Perl Workshop</div>
 </div>
-</div>
-[% END %]
-<p>
-    <a href="[% make_uri('news') %]" class="news-link">
-        Older announcements
-    </a>
-</p>
+<div class="row">
+    <div class="col-md-3">
+        <h2>Details</h2>
+        <p><em>Dates:</em> [% site.event_date %]</p>
+        <p><em>Location:</em> Downtown Pittsburgh, Doubletree hotel</p>
+        <p><em>Regular Cost:</em> $125</p>
+        <p>Discounts and scholarships available for students and active / retired military.</p>
+        [% IF global.request.user %]
+            [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
+                <a href="[% make_uri('purchase') %]">Purchase your event ticket</a>
+            [% END %]
+        [% ELSE %]
+            [% IF global.config.payment_open %]
+                <a href="[% make_uri('purchase') %]">Purchase your event ticket</a>
+            [% END %]
+        [% END %]
 
+        <h2>Sponsors</h2>
+        <div id="carousel-sponsors" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            [% sponsors = site.sponsors.values %]
+            [% sponsor = sponsors.shift %]
+            <div class="item active">
+              <img src="[% make_uri("images/sponsors/$sponsor.logo") %]" alt="[% sponsor.name %]">
+            </div>
+          [% FOREACH sponsor IN sponsors%]
+            <div class="item">
+                <a href="[% sponsor.url %]"><img src="[% make_uri("images/sponsors/$sponsor.logo") %]" alt="[% sponsor.name %]"> </a>
+            </div>
+          [% END %]
+          </div>
+        </div>
+
+        <p><a href="[% make_uri('sponsors.html#become-sponsor') %]">Sponsor PPW</a></p>
+
+    </div>
+    <div class="col-md-7">
+        <h2>About PPW</h2>
+        <p> Originally inspired by similar workshops in Europe, The
+        Pittsburgh Perl Workshop was established in 2006 as a
+        low-cost technical conference for users of the Perl
+        Programming Language. The conference emphasizes real code
+        and immediate, practical solutions to common issues.</p>
+
+        <p>Now in its seventh year, PPW has the distinction of
+        being the oldest event of its type in the country. Key
+        members of the Perl Community travel from all across the
+        country each year to participate in this event. </p>
+    </div>
+    <div class="col-md-2">
+        <h2>Follow us</h2>
+        <ul>
+            <li><a href="https://twitter.com/@pghpw">Twitter</a></li>
+            <li><a href="[% site.list_announce_url %]">Google Groups</a></li>
+            <li><a href="https://plus.google.com/100126444612908784582">Google Plus</a></li>
+            <li><a href="https://www.facebook.com/groups/302964522780/">Facebook</a></li>
+            <li><a href="https://www.youtube.com/channel/UCautJ6yqxYAHjUYYAdLc0pw">YouTube</a></li>
+        </ul>
+    </div>
+</div>
 [% END %]

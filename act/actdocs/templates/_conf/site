@@ -1,33 +1,124 @@
 [%
-  site = {
-      event_name = '<span class="event-name"><span class="city">Pittsburgh</span>
-                      <span class="language">Perl</span>
-                      <span class="event">Workshop</span></span>',
-      event_short_name = '<span class="event-name">PPW 2013</span></span>',
-      event_date = '<span class="event-date"><span class="month">October</span>
-                      <span class="day">8&ndash;9</span>
-                      <span class="year">2011</span></span>',
-      event_year = '2013'
-      event_theme = '<span class="event-theme">UNDEF</span>',
-      
-      list_general  = 'pittsburgh-perl-workshop@googlegroups.com',
-      list_proposal = 'ppw-proposals@googlegroups.com',
-      list_announce = 'ppw-announce@googlegroups.com',
+    site = {
+        event_name = '<span class="event-name"><span class="city">Pittsburgh</span>
+            <span class="language">Perl</span>
+            <span class="event">Workshop</span></span>',
+        event_short_name = '<span class="event-name">PPW 2014</span></span>',
+        event_date = '<span class="event-date"><span class="month">November</span>
+            <span class="day">8&ndash;9</span>
+            <span class="year">2014</span></span>',
+        event_year = '2014'
+            event_theme = '<span class="event-theme">UNDEF</span>',
 
-      list_general_url  = 'http://groups.google.com/group/pittsburgh-perl-workshop',
-      list_proposal_url = 'http://groups.google.com/group/ppw-proposals',
-      list_announce_url = 'http://groups.google.com/group/ppw-announce',
-      
-      pgh_pm = '<a href="http://pgh.pm.org">Pittsburgh Perl Mongers</a>',
+        list_general  = 'pittsburgh-perl-workshop@googlegroups.com',
+        list_proposal = 'ppw-proposals@googlegroups.com',
+        list_announce = 'ppw-announce@googlegroups.com',
 
-      track_easy = 'introductory',
-      track_hard = 'advanced',
+        list_general_url  = 'http://groups.google.com/group/pittsburgh-perl-workshop',
+        list_proposal_url = 'http://groups.google.com/group/ppw-proposals',
+        list_announce_url = 'http://groups.google.com/group/ppw-announce',
 
-      ztp_name = 'From Zero to Perl',
-      moose_name = 'Intro to Moose',
-      peter_scott_name = 'Maintaining Code While Staying Sane',
-  };
-  
-  site.event_name = site.event_name.replace('>\s+<', '> <');
-  site.event_date = site.event_date.replace('>\s+<', '> <');
+        pgh_pm = '<a href="http://pgh.pm.org">Pittsburgh Perl Mongers</a>',
+
+        track_easy = 'introductory',
+        track_hard = 'advanced',
+
+        ztp_name = 'From Zero to Perl',
+        moose_name = 'Intro to Moose',
+        peter_scott_name = 'Maintaining Code While Staying Sane',
+    };
+
+    site.event_name = site.event_name.replace('>\s+<', '> <');
+    site.event_date = site.event_date.replace('>\s+<', '> <');
+
+    site.sponsors = {
+        grant_street_group = {
+            name = 'Grant Street Group'
+            url  = 'http://grantstreet.com'
+            logo = 'gsg.png'
+            description = '
+                <p>Grant Street Group is a Software as a Service pioneer based
+                in Pittsburgh. We hosted the world&apos;s first online bond
+                auction in 1997. Since then, thousands of clients have used our
+                software to process financial transactions exceeding $12
+                trillion. Our most recent project is <a
+                href="http://te52.com">te52.com</a>, a cloud-based natural
+                language testing automation service.</p>
+
+                <p>Our projects leverage technologies in the fields of Natural
+                Language Processing, Large Scale computation, Distributed
+                Computing, Virtualization, and Financial Transactions.</p>
+
+                <p>We&apos;re big fans of Open Source technologies and
+                contribute to several Open Source projects. We are hiring local
+                and telecommuter Perl Developers. Visit
+                www.grantstreet.com/careers to learn more.</p>'
+        }
+        the_perl_foundation = {
+            name = 'The Perl Foundation'
+            logo = 'tpf.png'
+            url  = 'http://www.perlfoundation.org'
+            description = '
+                <p>Perl is a stable, cross-platform, open source programming language used 
+                for mission critical projects in the public and private sectors. The 
+                Perl Foundation is a non-profit corporation established to advance the 
+                use and development of the Perl programming language.</p>'
+        }
+        booking = {
+            name = 'Booking.com'
+            logo = 'booking.png'
+            url  = 'http://www.booking.com'
+            description = '
+                <p>Booking.com is an international success that build her
+                website on Perl. Booking.com, part of the Priceline Group
+                (Nasdaq: PCLN), is the world leader in booking accommodations
+                online. Each day, over 650,000 room nights are reserved on
+                Booking.com. Our IT Department focuses on development, scaling
+                and automation. We constantly challenge our current environment
+                to see how we can improve our business and go beyond our
+                current limits. Most of our tools are designed and built by us
+                with Open Source technologies. Booking.com runs one of the
+                world&apos;s largest Perl-powered websites and we offer a rapidly
+                evolving and dynamic environment.</p>'
+        }
+        cpanel = {
+            name = 'cPanel'
+            logo = 'cpanel.png'
+            url  = 'http://cpanel.net/'
+            description = '
+                <p>The cPanel & WHM software package is an easy-to-use control
+                panel that gives web hosts, and the website owners they serve,
+                the ability to quickly and easily manage their servers and
+                websites.  Developed in Perl and working in the SCRUM
+                development methodology, cPanel seeks highly motivated
+                development team members in our Houston location.   Visit
+                <a href=\'http://test.mongueurs.net/ppw2014/index.html\'>http://jobs.cpanel.net</a> 
+                for open positions. </p>'
+        }
+        bluehost = {
+            name = 'Bluehost'
+            url  = 'http://www.bluehost.com/'
+            logo = 'bluehost.png'
+            description = '
+                <p>Bluehost was founded in 2003 with one goal: to make a better
+                hosting company. Built from the ground up on open source
+                technology like Perl, we&apos;ve since grown to become one of the
+                world&apos;s largest providers of cloud-based online solutions.
+                Operating beneath the Wasatch Mountains in Utah, over 700 of us
+                are pushing boundaries to deliver the promise of the internet
+                to more people than ever.</p>'
+        }
+        hostgator = {
+            name = 'HostGator'
+            url  = 'http://www.hostgator.com/'
+            logo = 'hostgator.jpg'
+            description = '
+                <p>HostGator.com provides a full suite of web-based solutions to
+                small businesses, developers and individuals around the globe.
+                Since 2002 HostGator has been providing premium web hosting and
+                24/7 award winning customer service. HostGator offers shared
+                hosting, VPS hosting, Dedicated servers, domain names, and
+                more.</p>'
+        }
+    }
 %]

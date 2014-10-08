@@ -1,8 +1,20 @@
 [% WRAPPER ui title = "Location" %]
 [% PROCESS _conf/main %]
 
-<h1>Workshop Location</h1>
-<div class="location">
+<div class="row">
+    <h1>Workshop Location</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="location">
+
+            <p>We anticipate that the event will be held in the DoubleTree Hotel in
+            downtown Pittsburgh.   We are finalizing the contract with the DoubleTree
+            now and hope to have additional information very soon.</p>
+        </div>
+    </div>
+</div>
+<!--
     <span class="location-name">Pittsburgh Technical Institute</span>
     <div class="location-text">
     <p>
@@ -75,19 +87,33 @@
 <h1>Map</h1>
 <iframe src="http://mapsengine.google.com/map/embed?mid=zvzKqyrqos1k.kGIBQ--5I9zk" width="580" height="640"></iframe>
 
+-->
 
-<h1>Where to Eat</h1>
-<div class="important-note">
-  Breakfast, lunch, and beverages will be provided on the day of the workshop.
-  Our social event on Saturday night will also include free food.  Isn't that
-  sweet?
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Where to Eat</h1>
+        <div class="important-note">
+          Breakfast, lunch, and beverages will be provided on the day of the workshop.
+          We hope to obtain sponsorship so that we may also include our social event on
+          Saturday night for free.
+        </div>
+    </div>
 </div>
 
 <!--
 [% PROCESS comp/location/restaurants %]
 -->
 
-<h1>What to Do</h1>
-[% PROCESS comp/location/attractions %]
+<div class="row">
+    <div class="col-xs-12">
+        <h1>What to do</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        [% PROCESS comp/location/attractions %]
+    </div>
+</div>
 
 [% END %]

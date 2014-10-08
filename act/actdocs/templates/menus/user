@@ -1,53 +1,37 @@
 <!-- user menu -->
+[% PROCESS _conf/main %]
 [% IF global.request.user %]
-   [% WRAPPER menus/section %]
-   <a href="[% make_uri('main') %]">Logged in as [% global.request.user.login %]</a>
-   [% END %]
-   [% WRAPPER menus/item %]
-   <a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a>
-   [% END %]
-   [% WRAPPER menus/item %]
-   <a href="[% make_uri('logout') %]">{{Logout}}</a>
-   [% END %]
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">[% global.request.user.login %]<span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+
+   
+   <li><a href="[% make_uri('main') %]">Your information</li>
+  
+   <li><a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a></li>
+
+   <li><a href="[% make_uri('main') %]">{{Edit profile}}</a></li>
+
    [% UNLESS global.request.user.participation %]
-     [% WRAPPER menus/item %]
-     <a href="[% make_uri('register') %]">{{Register}}</a>
-     [% END %]
+     <li><a href="[% make_uri('register') %]">{{Register}}</a></li>
    [% END %]
+
    [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
-     [% WRAPPER menus/item %]
-     <a href="[% make_uri('purchase') %]">Purchase your event ticket</a>
-     [% END %]
+     <li><a href="[% make_uri('purchase') %]">Purchase your event ticket</a></li>
    [% END %]
-   [% WRAPPER menus/item %]
-   <a href="[% make_uri('main') %]">{{Edit profile}}</a>
-   [% END %]
+
+   <li><a href="[% make_uri('logout') %]">{{Logout}}</a></li>
+    </ul>
+</li>
+
 [% ELSE %]
-   [% WRAPPER menus/section %]
-       [% IF global.config.registration_open %]
-       {{Register}}
-       [% ELSE %]
-       <a href="[% make_uri('main') %]">{{Log in}}</a>
-       [% END %]
-   [% END %]
-   [% WRAPPER menus/item %]
-   <a href="[% make_uri('main') %]">{{Log in}}</a>
-   [% END %]
-   [% IF global.config.registration_open %]
-       [% WRAPPER menus/item %]
-       <a href="[% make_uri('register') %]">{{New user}}</a>
-       [% END %]
-   [% END %]
+
+   <li><a href="[% make_uri('main') %]">{{Log in}}</a></li>
+  
    [% IF global.config.payment_open %]
-       [% WRAPPER menus/item %]
-       <a href="[% make_uri('purchase') %]">Purchase your event ticket</a>
-       [% END %]
+       <li><a href="[% make_uri('purchase') %]">Register</a></li>
     [% END %]
 [% END %]
-[% FOREACH lang = global.languages %]
-   <span id="goto-lang">[% WRAPPER menus/item %]
-   <a href="[% lang.uri %]"
-        >&#x2192;&nbsp;[% lang.name %]</a>
-   [% END %]</span>
-[% END %]
+    </ul>
+</li>
 
