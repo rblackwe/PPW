@@ -5,7 +5,7 @@
         <li><a href="[% make_uri('costs.html') %]">Price</a></li>
         <li><a href="[% make_uri('location.html') %]">Location</a></li>
         <li><a href="[% make_uri('culture.html') %]">Our Culture</a></li>
-        <li><a href="[% make_uri('sponsors.html') %]">Sponsor</a></li>
+        <li><a href="[% make_uri('sponsors.html') %]">Sponsors</a></li>
         <li><a href="[% make_uri('faq.html') %]">FAQ </a></li>
         <li><a href="[% make_uri('news') %]">News </a></li>
         <li><a href="[% make_uri('wiki') %]">Wiki </a></li>
