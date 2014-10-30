@@ -1,6 +1,7 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 @page-background:  #3B3B3B;
+@content-background: #FFFFFF;
 body {
     background-color: @page-background;
     padding-top: 50px;
@@ -8,7 +9,7 @@ body {
 
 .page-content {
     padding: 40px 15px;
-    background-color: #FFFFFF;
+    background-color: @content-background;
 }
 
 
@@ -74,7 +75,6 @@ textarea {
    ========================================================================== */
 
 
-
 @ppw-yellow:     #f9b611;
 @ppw-blue:       #175bad;
 
@@ -103,6 +103,28 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         width: 100%;
         height: auto;
     }
+}
+
+.location-name {
+    display: block;
+    font-size: 24px;
+}
+
+
+.location-detail {
+    display: inline-block;
+    padding: 10px;
+    background-color: darken(@content-background, 2%);
+}
+
+.location-cat {
+    display: block;
+    font-weight: 600;
+}
+
+.location-item {
+    display: block;
+    padding: 10px;
 }
 
 
