@@ -3,7 +3,7 @@ REMOTE_HOST=spectre.mongueurs.net
 REMOTE_ROOT_TEST=ppw2014-test
 REMOTE_ROOT_REPO=ppw2014
 RSYNC=$(shell which rsync)
-RSYNC_ARGS=-avz --delete --exclude '.svn' --exclude '*.swp' --exclude '.DS_Store' --exclude 'less'
+RSYNC_ARGS=-avz --delete --exclude '.svn' --exclude '*.swp' --exclude '.DS_Store' --exclude 'less' --exclude config.codekit
 
 SSH=$(shell which ssh)
 GIT=$(shell which git)
