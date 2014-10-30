@@ -1,7 +1,9 @@
 [% WRAPPER ui title = "Event Price" %]
 [% PROCESS _conf/main %]
 
-<h2>Registration (Saturday, November 8th and Sunday, November 9th)</h2>
+<div class="row"><div class="h1 col-xs-12">Event Price</div></div>
+
+<div class="row"><div class="h2 col-xs-12">Registration (Saturday, November 8th and Sunday, November 9th)</div></div>
 
 [% IF ! global.config.payment_open %]
 <p>Prices have not yet been set for this year&#39;s event.   We hope to have
@@ -12,7 +14,6 @@ event while still maintaining ground-breaking quality.</p>
 
 <ul>
     <li>Admission to the two-day (Saturday and Sunday) main event, including keynotes, talks.</li>
-    <li>Admission to Friday- and Saturday-night social events</li>
     <li>Breakfast and Lunch, both days</li>
     <li>Opportunity to talk to Perl job recruiters</li>
     <li>Access to dozens of CPAN authors and key Perl community members</li>
@@ -46,38 +47,24 @@ event while still maintaining ground-breaking quality.</p>
     <li>Please contact <a href="mailto:organizers@pghpw.org">organizers@pghpw.org</a> for more information.</li>
 </ul>
 
-<h2>Add-on courses (Friday, October 4th)</h2>
+<h2>Add-on courses (Friday, November 7th)</h2>
 
-<p>Information regarding add-on classes will be available soon.</p>
-
-<!-- 
 <h3>What you get:</h3>
 
 <ul>
-    <li>Admission to an additional full day of instruction on Friday, October 4th.</li>
-    <li>Breakfast and Lunch on Friday</li>
-    <li>A special PPW USB flash drive pre-loaded with all course materials.</li>
+    <li>Admission to an additional full day of instruction on Friday, November 7th.</li>
+    <li>Snacks provided (you will be on your own for breakfast and lunch)</li>
 </ul>
 
 <h3>Add-on fees:</h3>
 
-<table width="95%">
-    <tr>
-        <th><a href="[% make_uri('zerotoperl.html') %]">From Zero to Perl</a></th><td><em>$[% global.config.product_ztp_price1_amount %]</em> with your PPW registration,  $[% global.config.product_ztp_price2_amount %] if purchased by itself.</td>
-        </tr><tr>
-        <th><a href="[% make_uri('git.html') %]">Introduction to Git</a></th><td><em>Free!</em> with your PPW registration,  $[% global.config.product_git_price2_amount %] if purchased by itself.</td>
-    </tr>
-</table>
+<div class="row">
+    <div class="col-xs-11 col-xs-offset-1">
+        <p><a href="[% make_uri('zerotoperl.html') %]">From Zero to Perl</a> <em>Free</em> with your PPW registration!  $[% global.config.product_ztp_price2_amount %] if purchased by itself.</p>
+    </div>
+</div>
 
-<p>Space is limited in both add-on classes.   Advanced registration is required.</p>
-
-<h3>Can't afford it?</h3>
-
-<ul>
-    <li>How can you afford not to?    Where else are you going to have the opportunity to learn an entire programming language in just one weekend for such a low price?</li>
-</ul>
-
--->
+<p>Space is limited for add-on classes.   <a href="[% make_uri('purchase') %]">Advanced registration</a> is required.</p>
 
 [% END %]
 [% END %]
