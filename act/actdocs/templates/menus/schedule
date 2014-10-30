@@ -19,6 +19,8 @@
        [% END %]
    [% END %]
 
+   <li><a href="[% make_uri('zerotoperl.html') %]">From Zero to Perl</a></li>
+
    [% IF global.request.user.is_talks_admin %]
        <li><a href="[% make_uri('talks') %]">
          Submitted Talks
