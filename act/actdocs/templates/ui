@@ -34,7 +34,7 @@
 
     <div class="container footer">
         <div class="row">
-        <p>Copyright &copy; 2006-[% site.event_year %] Pittsburgh Perl Workshop. Mast photo by <a href="http://flickr.com/people/whobee/">whobee@flickr</a>.</p>
+        <p>Copyright &copy; 2006-[% site.event_year %] Pittsburgh Perl Workshop.</p>
         </div>
     </div>
 
