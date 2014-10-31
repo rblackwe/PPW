@@ -4,34 +4,28 @@
 <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">[% global.request.user.login %]<span class="caret"></span></a>
     <ul class="dropdown-menu" role="menu">
+        <li><a href="[% make_uri('main') %]">Your information</li>
+        <li><a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a></li>
+        <li><a href="[% make_uri('main') %]">{{Edit profile}}</a></li>
+        [% UNLESS global.request.user.participation %]
+         <li><a href="[% make_uri('register') %]">{{Register}}</a></li>
+        [% END %]
 
-   
-   <li><a href="[% make_uri('main') %]">Your information</li>
-  
-   <li><a href="[% make_uri_info('user', global.request.user.user_id) %]">View profile</a></li>
-
-   <li><a href="[% make_uri('main') %]">{{Edit profile}}</a></li>
-
-   [% UNLESS global.request.user.participation %]
-     <li><a href="[% make_uri('register') %]">{{Register}}</a></li>
-   [% END %]
-
-   [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
-     <li><a href="[% make_uri('purchase') %]">Purchase your event ticket</a></li>
-   [% END %]
-
-   <li><a href="[% make_uri('logout') %]">{{Logout}}</a></li>
+       [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
+         <li><a href="[% make_uri('purchase') %]">Purchase your event ticket</a></li>
+       [% ELSE %]
+         <li><a href="[% make_uri('purchase') %]">Make extra purchases</a></li>
+       [% END %]
+    
+       <li><a href="[% make_uri('logout') %]">{{Logout}}</a></li>
     </ul>
 </li>
 
 [% ELSE %]
-
    <li><a href="[% make_uri('main') %]">{{Log in}}</a></li>
   
    [% IF global.config.payment_open %]
        <li><a href="[% make_uri('purchase') %]">Register</a></li>
-    [% END %]
+   [% END %]
 [% END %]
-    </ul>
-</li>
 

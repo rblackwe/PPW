@@ -16,6 +16,7 @@
             <ul class="nav navbar-nav">
                 [% PROCESS menus/info %]
                 [% PROCESS menus/schedule %]
+                [% PROCESS menus/admin %]
                 [% PROCESS menus/user %]
             </ul>
             <ul class="nav navbar-nav navbar-right">
