@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17756",
+"creatorBuild": "18027",
 "files": {
 	"\/actdocs\/static\/costs.html": {
 		"fileType": 8192,
@@ -83,15 +83,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/actdocs\/static\/old-index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/actdocs\/static\/old-index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/actdocs\/static\/sponsors.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -124,15 +115,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/actdocs\/static\/zerotoperl.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -655,6 +637,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wwwdocs\/img\/location-mast.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175640,
+		"inputAbbreviatedPath": "\/wwwdocs\/img\/location-mast.jpg",
+		"outputAbbreviatedPath": "\/wwwdocs\/img\/location-mast.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wwwdocs\/img\/mast.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -732,6 +725,50 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/wwwdocs\/js\/min\/bootstrap-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/min\/bootstrap-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/min\/min\/bootstrap-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wwwdocs\/js\/min\/bootstrap.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/min\/bootstrap.min-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/min\/min\/bootstrap.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wwwdocs\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/min\/min\/main-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wwwdocs\/js\/min\/plugins-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/min\/plugins-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/min\/min\/plugins-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/wwwdocs\/js\/plugins.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -749,6 +786,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/jquery-1.11.0.min.js",
 		"outputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/min\/jquery-1.11.0.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wwwdocs\/js\/vendor\/min\/jquery-1.11.0.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/min\/jquery-1.11.0.min-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/min\/min\/jquery-1.11.0.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/wwwdocs\/js\/vendor\/min\/modernizr-2.6.2.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/min\/modernizr-2.6.2.min-min.js",
+		"outputAbbreviatedPath": "\/wwwdocs\/js\/vendor\/min\/min\/modernizr-2.6.2.min-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
