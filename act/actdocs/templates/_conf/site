@@ -59,10 +59,11 @@
             logo = 'tpf.png'
             url  = 'http://www.perlfoundation.org'
             description = '
-                <p>Perl is a stable, cross-platform, open source programming language used 
-                for mission critical projects in the public and private sectors. The 
-                Perl Foundation is a non-profit corporation established to advance the 
-                use and development of the Perl programming language.</p>'
+                <p>The Perl Foundation is a non-profit corporation established to advance the 
+                use and development of the Perl programming language.</p>
+                <p>"TPF", as it is often referred to, provides 
+                the infrastructure that makes it possible for local Perl Monger
+                groups to conduct conferences such as PPW.</p>'
         }
         booking = {
             name = 'Booking.com'
@@ -119,6 +120,18 @@
                 24/7 award winning customer service. HostGator offers shared
                 hosting, VPS hosting, Dedicated servers, domain names, and
                 more.</p>'
+        }
+        pair = {
+            name = 'pair Networks, Inc.'
+            url  = 'http://www.pair.com'
+            logo = 'pairnetworks.jpg'
+            description = '
+                <p>pair Networks is a global Web hosting and domain name
+                registration company that has been providing reliable service
+                for over 18 years. People in over 150 countries around the
+                world choose us for our world class network; our responsive,
+                knowledgeable support specialists; and our secure and reliable
+                servers.'
         }
     }
 %]
