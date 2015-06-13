@@ -43,7 +43,7 @@
         <div class="row h2">Details</div>
         <p><em>Dates:</em> [% site.event_date %]</p>
         <p><em>Location:</em> Downtown Pittsburgh, Doubletree hotel (<a href="[% make_uri('location.html') %]">more information</a>)</p>
-        <p><em>Regular Cost:</em> $[% global.config.product_registration_price1_amount %]</p>
+        <p><em>Regular Cost:</em> [% IF ! global.config.payment_open %](to be announced)[%ELSE%] $[% global.config.product_registration_price1_amount %][%END%]</p>
         <p>Discounts and scholarships available for students and active / retired military.</p>
         [% IF global.request.user %]
             [% IF global.request.user.has_registered AND NOT global.request.user.has_paid  AND global.config.payment_open %]
