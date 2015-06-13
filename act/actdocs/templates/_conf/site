@@ -3,11 +3,11 @@
         event_name = '<span class="event-name"><span class="city">Pittsburgh</span>
             <span class="language">Perl</span>
             <span class="event">Workshop</span></span>',
-        event_short_name = '<span class="event-name">PPW 2014</span></span>',
-        event_date = '<span class="event-date"><span class="month">November</span>
-            <span class="day">8&ndash;9</span>
-            <span class="year">2014</span></span>',
-        event_year = '2014'
+        event_short_name = '<span class="event-name">PPW 2015</span></span>',
+        event_date = '<span class="event-date"><span class="month">October</span>
+            <span class="day">9&ndash;11</span>
+            <span class="year">2015</span></span>',
+        event_year = '2015'
             event_theme = '<span class="event-theme">UNDEF</span>',
 
         list_general  = 'pittsburgh-perl-workshop@googlegroups.com',
@@ -54,17 +54,6 @@
                 and telecommuter Perl Developers. Visit
                 www.grantstreet.com/careers to learn more.</p>'
         }
-        the_perl_foundation = {
-            name = 'The Perl Foundation'
-            logo = 'tpf.png'
-            url  = 'http://www.perlfoundation.org'
-            description = '
-                <p>The Perl Foundation is a non-profit corporation established to advance the 
-                use and development of the Perl programming language.</p>
-                <p>"TPF", as it is often referred to, provides 
-                the infrastructure that makes it possible for local Perl Monger
-                groups to conduct conferences such as PPW.</p>'
-        }
         booking = {
             name = 'Booking.com'
             logo = 'booking.png'
@@ -82,20 +71,20 @@
                 world&apos;s largest Perl-powered websites and we offer a rapidly
                 evolving and dynamic environment.</p>'
         }
-        cpanel = {
-            name = 'cPanel'
-            logo = 'cpanel.png'
-            url  = 'http://cpanel.net/'
-            description = '
-                <p>The cPanel & WHM software package is an easy-to-use control
-                panel that gives web hosts, and the website owners they serve,
-                the ability to quickly and easily manage their servers and
-                websites.  Developed in Perl and working in the SCRUM
-                development methodology, cPanel seeks highly motivated
-                development team members in our Houston location.   Visit
-                <a href=\'http://test.mongueurs.net/ppw2014/index.html\'>http://jobs.cpanel.net</a> 
-                for open positions. </p>'
-        }
+        #cpanel = {
+        #    name = 'cPanel'
+        #    logo = 'cpanel.png'
+        #    url  = 'http://cpanel.net/'
+        #    description = '
+        #        <p>The cPanel & WHM software package is an easy-to-use control
+        #        panel that gives web hosts, and the website owners they serve,
+        #        the ability to quickly and easily manage their servers and
+        #        websites.  Developed in Perl and working in the SCRUM
+        #        development methodology, cPanel seeks highly motivated
+        #        development team members in our Houston location.   Visit
+        #        <a href=\'http://jobs.cpanel.net\'>http://jobs.cpanel.net</a> 
+        #        for open positions. </p>'
+        #}
         bluehost = {
             name = 'Bluehost'
             url  = 'http://www.bluehost.com/'
@@ -124,7 +113,7 @@
         pair = {
             name = 'pair Networks, Inc.'
             url  = 'http://www.pair.com'
-            logo = 'pairnetworks.jpg'
+            logo = 'pair-logo.svg'
             description = '
                 <p>pair Networks is a global Web hosting and domain name
                 registration company that has been providing reliable service
@@ -132,6 +121,70 @@
                 world choose us for our world class network; our responsive,
                 knowledgeable support specialists; and our secure and reliable
                 servers.'
+        }
+        #dreamhost = {
+        #    name = 'DreamHost'
+        #    url  = 'http://www.dreamhost.com'
+        #    logo = 'dh_logo-a-2014.png'
+        #    description = '
+        #    <p>Since 1997 DreamHost has helped entrepreneurs and developers
+        #            the world over bring their dreams to life on the Internet. From domain
+        #            registrations to web hosting and even powerful cloud storage and computing
+        #            services, more than 400,000 customers trust DreamHost to be their online home.
+        #            Packed with unbelievable value, DreamHost is the best place to launch a blog,
+        #            website, or web application into the stratosphere. Learn more at
+        #            <a href="http://www.dreamhost.com">www.DreamHost.com</a></p>'
+        #}
+        ziprecruiter = {
+            name = 'ZipRecruiter'
+            url  = 'https://www.ziprecruiter.com/'
+            logo = 'ziprecruiter.png'
+            description = '
+                <p>ZipRecruiter offers the fastest and easiest way to get a job
+                listing in front of millions of candidates, and now includes
+                digital onboarding for all subscribers. </p>
+                <p>ZipRecruiter&quot;s web-based platform streamlines the
+                hiring process by enabling companies to post a job to 100+ job
+                boards with 1 click and to manage all applicants through a
+                simple online interface. By providing a central location for
+                finding, screening and tracking applicants, ZipRecruiter helps
+                employers make the best hiring decisions quickly and at a
+                fraction of the cost of traditional job boards.</p>'
+        }
+        mediamath = {
+            name = 'MediaMath'
+            url  = 'http://www.mediamath.com'
+            logo = 'MediaMath_Logo_Border_CMYK.svg'
+            description = '
+                <p>MediaMath is a global technology company that&#39;s
+                revolutionizing traditional marketing and empowering marketers
+                to unleash the power of goal-based marketing at scale,
+                transparently across the enterprise. Our platform &mdash; the
+                TerminalOne Marketing Operating System - handles billions of
+                transactions every hour and hundreds of millions of internet
+                users every day, which means every solution must be built to
+                scale. Our breakthroughs create new marketplaces and solve
+                long-standing problems in an industry that is constantly
+                evolving. Our engineers are building the leading technology
+                platform to power the new digital marketing ecosystem, and we
+                are looking for driven, curious innovators to join our
+                team.</p>'
+        }
+        liquidweb = {
+            name = 'Liquid Web'
+            url  = 'https://www.liquidweb.com/'
+            logo = 'liquidweb-blk-lg.jpg'
+            description = '
+                <p>Liquid Web is a privately held, managed web hosting company
+                founded in 1997. The company owns and operates three data
+                center facilities located in Lansing, Michigan in addition to
+                having a software development office and a data center in
+                metropolitan Phoenix, Arizona. In 2014, the company also
+                launched development space in Ann Arbor, Michigan as well as
+                extending hosting operations to Europe in Amsterdam, NL in
+                2015. The rapidly expanding web host has been recognized
+                amongst INC Magazine\'s 5000 Fastest Growing Companies for eight
+                consecutive years, beginning in 2007.'
         }
     }
 %]
