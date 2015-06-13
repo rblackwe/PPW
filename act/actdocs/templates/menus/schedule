@@ -10,6 +10,7 @@
        [% IF global.request.user.has_registered %]
            <li><a href="[% make_uri('myschedule') %]"> {{Personal Schedule}} </a></li>
        [% END %]
+       <li><a href="[% make_uri('proceedings') %]">{{Proceedings}}</a></li>
        <li class="divider"></li>
    [% END %]
 
