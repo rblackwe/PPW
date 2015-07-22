@@ -1,6 +1,11 @@
 [%
   attractions = [
     {
+        name    = 'Downtown Pittsburgh Guide',
+        notes   = 'A comprehensive guide of things to do and places to eat in the downtown Pittsburgh area.',
+        uri     = 'http://www.downtownpittsburgh.com/play',
+    },
+    {
         name    = 'Carnegie Museum of Art',
         price   = '$17.95 general admission ($11.95 for students)',
         notes   = '"Offers a distinguished collection of contemporary art, works of American art from the late nineteenth century, French Impressionist and Post-Impressionist paintings, and European and American decorative arts from the late seventeenth century to the present."',
